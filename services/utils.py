@@ -70,6 +70,7 @@
 # collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
 import os
 import base64
+import pandas as pd
 import requests
 import datetime
 from django.core.files.base import ContentFile
@@ -150,6 +151,8 @@ def collect_attachments(email_address, subject_name, client_id, client_secret, t
 
                 # Get the S3 file URL
                 s3_file_url = s3_storage.url(s3_file_path)
+                df =  pd.read_csv(s3_file_url,encoding = "ISO-8859-1")
+                print('COLUMNS::::',df.columns)
 
                 print(f'Saved attachment: {attachment_name}')
                 print(f'S3 file URL: {s3_file_url}')

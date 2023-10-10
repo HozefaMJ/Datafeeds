@@ -29,8 +29,8 @@ def quilter(request):
     subject_name = 'Datafeeds_Provider_QUILTER'
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
-    df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Quilter+Regulars.xlsx')
+    # df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Quilter Reg.xlsx')
 
     df['ValuationDate'] = df['Valuation Date']
     df['BrokerID'] = df[' Agent Number']
@@ -50,8 +50,21 @@ def quilter(request):
     new_df = df[['ValuationDate','BrokerID','PolicyNumber','Product','PolicyCurrency','HoldingName','HoldingReference','HoldingCurrency','Units','UnitPrice','HoldingMarketValueHoldingCurrency','HoldingMarketValuePolicyCurrency','SurrenderValue','TotalContribution']]
     financial_account = df.drop_duplicates(subset='PolicyNumber')[['ValuationDate','BrokerID','PolicyNumber','Product','PolicyCurrency','HoldingName','HoldingReference','HoldingCurrency','Units','UnitPrice','HoldingMarketValueHoldingCurrency','HoldingMarketValuePolicyCurrency','SurrenderValue','TotalContribution']]
 
+    # def convert_date_format(date_string):
+    #     try:
+    #         # Attempt to parse the date using the current format
+    #         date_object = datetime.datetime.strptime(date_string, "%d/%m/%Y")
+    #         # Convert the date to the expected format (YYYY-MM-DD)
+    #         converted_date = date_object.strftime("%Y-%m-%d")
+    #         return converted_date
+    #     except ValueError:
+    #         raise ValidationError("Invalid date format. The date must be in DD/MM/YYYY format.")
+
     def convert_date_format(date_string):
         try:
+            if isinstance(date_string, pd.Timestamp):
+                date_string = date_string.strftime("%d/%m/%Y")
+
             # Attempt to parse the date using the current format
             date_object = datetime.datetime.strptime(date_string, "%d/%m/%Y")
             # Convert the date to the expected format (YYYY-MM-DD)
@@ -136,9 +149,11 @@ def quilterLumpsum(request):
     subject_name = 'Datafeeds_Provider_QUILTER_LUMPSUM'
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
-    df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    # df = pd.read_csv('/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/Quilter Main May 2023.csv',encoding = "ISO-8859-1")
+    # df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    df = pd.read_csv('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Quilter Main Sept 2023.csv',encoding = "ISO-8859-1")
     # df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/Quilter LumpSum.xlsx')
+
+    print('COLUMNS::::',df.columns)
 
 
     df['ValuationDate'] = df['ValuationDate']
@@ -313,7 +328,8 @@ def utmost(request):
     subject_name = 'Datafeeds_Provider_UTMOST'
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
-    df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    # df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    df = pd.read_csv('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Valuation 40401163_97000257.csv',encoding = "ISO-8859-1")
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Utmost+Regulars.xlsx')
     
     df['ValuationDate'] = df['Valuation Date']
@@ -420,7 +436,7 @@ def utmostLumpsum(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Datafeeds/attachments/Utmost LS Test.csv",encoding = "ISO-8859-1")
+    df = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Valuation GP52024_PF911076.csv",encoding = "ISO-8859-1")
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Utmost+LumpSum.xlsx')
 
     df['ValuationDate'] = df['Valuation Date']
@@ -430,11 +446,11 @@ def utmostLumpsum(request):
     df['PolicyCurrency'] = df['Plan Currency']
     df['HoldingName'] = df['Security Issuer']+' '+df['Security Name']
     df['HoldingReference'] = df['PolicyNumber']+'-'+df['HoldingName']
-    df['HoldingCurrency'] = df['Security Currency']
+    # df['HoldingCurrency'] = df['Security Currency']
     df['SEDOL'] = df['SEDOL']
     df['ISIN'] = df['ISIN']
-    df['Units'] = df['Security Holding']
-    df['UnitPrice'] = df['Security Currency Market Bid Price']
+    # df['Units'] = df['Security Holding']
+    # df['UnitPrice'] = df['Security Currency Market Bid Price']
     df['HoldingMarketValueHoldingCurrency'] = df['Investment Currency Market Value']
     df['HoldingMarketValuePolicyCurrency'] = df['Plan Currency Market Value']
     df['BookCost'] = df['Plan Currency Book Cost']
@@ -1073,7 +1089,8 @@ def hansard(request):
     subject_name = 'Datafeeds_Provider_HANSARD'
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
-    df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    # df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Hansard.xlsx')
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Hansard+Lumpsum.xlsx')
 
     df['PolicyNumber'] = df['Policy Number']
@@ -1248,21 +1265,21 @@ def providence(request):
     df = pd.read_csv(filename,encoding = "ISO-8859-1")
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Providence.xlsx')
 
-    df['PolicyNumber'] = df['Policy Id']
-    df['PolicyStatus'] = df['Status Value']
-    df['PolicyCurrency'] = df['Policy Currency']
-    df['Product'] = df['Product']
-    df['Trust'] = df['Trust']
-    df['HoldingName'] = df['Fund Name']
+    df['PolicyNumber'] = df['Policy ID']
+    df['PolicyStatus'] = df[' Status Value']
+    df['PolicyCurrency'] = df[' PolicyCurrency']
+    df['Product'] = df[' Product']
+    df['Trust'] = df[' Trust']
+    df['HoldingName'] = df[' Fund Name']
     df['HoldingReference'] = df['PolicyNumber'] +'-'+df['HoldingName']
-    df['ISIN'] = df['ISIN']
-    df['HoldingCurrency'] = df['Fund Currency']
-    df['Units'] = df['Units']
-    df['UnitPrice'] = df['Price']
-    df['HoldingMarketValueHoldingCurrency'] = df['Value in Fund Currency']
-    df['HoldingMarketValuePolicyCurrency'] = df['Value In Policy Currency']
-    df['ValuationDate'] = df['Current Date']
-    df['BrokerID'] = df['Adviser Id']
+    df['ISIN'] = df[' ISIN']
+    df['HoldingCurrency'] = df[' Fund Currency']
+    df['Units'] = df[' Units']
+    df['UnitPrice'] = df[' Price']
+    df['HoldingMarketValueHoldingCurrency'] = df[' Value in Fund Currency']
+    df['HoldingMarketValuePolicyCurrency'] = df[' Value in Policy Currency']
+    df['ValuationDate'] = df[' Current Date']
+    df['BrokerID'] = df[' Adviser ID']
 
     new_df = df[['PolicyNumber',
                 'PolicyStatus',
@@ -1297,15 +1314,14 @@ def providence(request):
                 'BrokerID',
                 ]]
 
-    def convert_date_format(date_string):
-        try:
-            # Attempt to parse the date using the current format
-            date_object = datetime.datetime.strptime(date_string, "%d/%m/%Y")
-            # Convert the date to the expected format (YYYY-MM-DD)
-            converted_date = date_object.strftime("%Y-%m-%d")
-            return converted_date
-        except ValueError:
-            raise ValidationError("Invalid date format. The date must be in DD/MM/YYYY format.")
+    def convert_date_format(input_date):
+        input_format = "%Y-%m-%d %H:%M:%S"
+        output_format = "%Y-%m-%d"
+        
+        input_datetime = datetime.datetime.strptime(input_date, input_format)
+        output_date = input_datetime.strftime(output_format)
+        
+        return output_date
 
     new_df.to_excel('Generated_Providence.xlsx',index=False)
     for index,row in new_df.iterrows():
@@ -1507,8 +1523,8 @@ def seb(request):
     subject_name = 'Datafeeds_Provider_SEB'
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
-    df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/SEB.xls')
+    # df = pd.read_csv(filename,encoding = "ISO-8859-1")
+    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/SEB Main Sept 2023.xls')
 
     df['PolicyNumber'] = df['Policy Number']
     df['HoldingName'] = df['Asset Name']
@@ -1657,7 +1673,7 @@ def seb(request):
 class FinancialAccount(View):
     def get(self, request):
         # Authentication API
-        auth_url = "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9Lf04EwncL7nnahVfL22MsVCidJ8U8aXkqt9M_DAouGKz2SR1VtIJUgsAwC_lblXaIGHRt8Hcyb8TbtjL&client_secret=B09FB34F2779732B4225D05A194DC50CFA065153871567A9321760EFFC180657&username=coberg@skyboundwealth.com.cobergdev&password=Csky@1234"
+        auth_url = "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9LlLrkcRhGHZ75_1zzxBX1noA2B0HBuVoIwSwoNrX__w00o1E_3n53HcLWWdLv._kdf9MAtZ0NBYuAHMb&client_secret=AF350B7DB79F3912680AE6621854216E82C39720DE8A906EE6D9B9D5AC092315&username=marwan.elsadat@skybound.staging&password=Coberg@123"
         auth_headers = {
             # 'Authorization': 'Bearer 00D3H0000000NiN!ARcAQHBhtgrTFpfzY_2E71gCc1sOoARYkVxC1TznMjJnAaUBZF3PUO84_RFCiVMTkpf13qn8hs25RCEbH0akQKwehgqy6By8'
         }
@@ -1689,7 +1705,7 @@ class FinancialAccount(View):
 
         if access_token:
             # Financial Account API
-            financial_account_url = "https://swm3--cobergdev.sandbox.my.salesforce.com/services/apexrest/DataFeeds/FinancialAccount/*"
+            financial_account_url = "https://swm3--staging.sandbox.my.salesforce.com/services/apexrest/DataFeeds/FinancialAccount/*"
             financial_account_headers = {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + access_token
@@ -1781,7 +1797,7 @@ class FinancialAccount(View):
 class Holdings(View):
     def get(self, request):
         # Authentication API
-        auth_url = "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9Lf04EwncL7nnahVfL22MsVCidJ8U8aXkqt9M_DAouGKz2SR1VtIJUgsAwC_lblXaIGHRt8Hcyb8TbtjL&client_secret=B09FB34F2779732B4225D05A194DC50CFA065153871567A9321760EFFC180657&username=coberg@skyboundwealth.com.cobergdev&password=Csky@1234"
+        auth_url = "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9LlLrkcRhGHZ75_1zzxBX1noA2B0HBuVoIwSwoNrX__w00o1E_3n53HcLWWdLv._kdf9MAtZ0NBYuAHMb&client_secret=AF350B7DB79F3912680AE6621854216E82C39720DE8A906EE6D9B9D5AC092315&username=marwan.elsadat@skybound.staging&password=Coberg@123"
         auth_headers = {}
 
         auth_response = requests.post(auth_url, headers=auth_headers)
@@ -1816,7 +1832,7 @@ class Holdings(View):
 
         if access_token:
             # Holdings API
-            holdings_url = "https://swm3--cobergdev.sandbox.my.salesforce.com/services/apexrest/DataFeeds/Holdings/*"
+            holdings_url = "https://swm3--staging.sandbox.my.salesforce.com/services/apexrest/DataFeeds/Holdings/*"
             holdings_headers = {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + access_token
