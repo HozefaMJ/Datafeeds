@@ -261,15 +261,17 @@ def download_latest_file_from_sftp(host, username, password, remote_directory, l
 
 
 
-def process_sftp_file():
+# def process_sftp_file():
     # Set up the connection parameters for SFTP
+    cnopts = pysftp.CnOpts()
+    cnopts.hostkeys = None  # Disable host key checking
     sftp_host = 'sftp43.providence.quatrix.it'
     sftp_username = 'q9074433'
     sftp_password = 'm*deufWGnAh.xn_cCmk6pz_FW'
     remote_folder_path = '/Skybound UAE'
 
     # Connect to the SFTP server
-    with pysftp.Connection(sftp_host, username=sftp_username, password=sftp_password) as sftp:
+    with pysftp.Connection(sftp_host, username=sftp_username, password=sftp_password,cnopts=cnopts) as sftp:
         # Change directory to the desired folder
         sftp.cwd(remote_folder_path)
 
@@ -321,6 +323,61 @@ def process_sftp_file():
             return None
 
 
+from paramiko import SSHException
+import pandas as pd
+
+def process_sftp_file():
+    # Set up the connection parameters for SFTP
+    sftp_host = 'sftp43.providence.quatrix.it'
+    sftp_username = 'q9074433'
+    sftp_password = 'm*deufWGnAh.xn_cCmk6pz_FW'
+    remote_folder_path = '/Skybound UAE'
+
+    cnopts = pysftp.CnOpts()
+    cnopts.hostkeys = None  # Disable host key checking
+
+    try:
+        # Connect to the SFTP server
+        with pysftp.Connection(sftp_host, username=sftp_username, password=sftp_password, cnopts=cnopts) as sftp:
+            # Change directory to the desired folder
+            sftp.cwd(remote_folder_path)
+
+            # Get the list of files in the remote folder
+            file_list = sftp.listdir()
+
+            # Sort the file list by modified time in descending order
+            file_list.sort(key=lambda x: sftp.stat(x).st_mtime, reverse=True)
+
+            if file_list:
+                latest_file = file_list[0]
+                local_directory = 'C:\WorkSpace\Datafeeds\services'
+
+                # Create the directory if it doesn't exist
+                if not os.path.exists(local_directory):
+                    os.makedirs(local_directory)
+
+                local_file_path = os.path.join(local_directory, latest_file)
+
+                sftp.get(latest_file, local_file_path)
+
+                print('Latest file downloaded successfully:', latest_file)
+                
+                # Ensure you have a valid filename before reading it
+                if local_file_path:
+                    df = pd.read_csv(local_file_path, encoding="ISO-8859-1")
+                    # Process the DataFrame
+
+                return latest_file
+            else:
+                print('No files found in the remote folder.')
+                return None
+
+    except SSHException as e:
+        print(f"SSHException: {e}")
+        # Handle the SSHException here
+
+if __name__ == '__main__':
+    process_sftp_file()
 
 def get_product_id(product_name):
     switch_case = {

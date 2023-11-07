@@ -2,7 +2,7 @@ import math
 from django.forms import ValidationError
 import requests
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseBadRequest, JsonResponse
 import datetime
 from django.utils import timezone
 import pandas as pd
@@ -30,7 +30,9 @@ def quilter(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Quilter Reg.xlsx')
+    # df = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\Quilter\Quilter Insite  - Oct 2023\Valuation 000739445_000930564.csv",encoding = "ISO-8859-1")
+    df = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\Quilter\Valuation 000739445_000930564.csv",encoding = "ISO-8859-1")
+    # df = pd.read_excel(r'C:\WorkSpace\Datafeeds\files\DataFeeds\Quilter Reg.xlsx')
 
     df['ValuationDate'] = df['Valuation Date']
     df['BrokerID'] = df[' Agent Number']
@@ -150,7 +152,9 @@ def quilterLumpsum(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_csv('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Quilter Main Sept 2023.csv',encoding = "ISO-8859-1")
+    # df = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Quilter\Lumpsum\Quilter IDD - Oct 2023.csv',encoding = "ISO-8859-1")
+    # df = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Quilter\Lumpsum\Quilter Main  - Oct 2023.csv',encoding = "ISO-8859-1")
+    df = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Quilter\Lumpsum\Quilter UK - Oct 2023.csv',encoding = "ISO-8859-1")
     # df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/Quilter LumpSum.xlsx')
 
     print('COLUMNS::::',df.columns)
@@ -329,12 +333,13 @@ def utmost(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_csv('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Valuation 40401163_97000257.csv',encoding = "ISO-8859-1")
+    df = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Utmost\Valuation 40401163_97000257.csv',encoding = "ISO-8859-1")
+    # df = pd.read_csv(r'C:\WorkSpace\Datafeeds\files\DataFeeds\Valuation 40401163_97000257.csv',encoding = "ISO-8859-1")
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Utmost+Regulars.xlsx')
     
     df['ValuationDate'] = df['Valuation Date']
     df['BrokerID'] = df[' Agent Number']
-    df['PolicyNumber'] = '000'+df[' Product Number'].astype(str)
+    df['PolicyNumber'] = df[' Product Number'].astype(str)
     df['Product'] = df[' Product Name']
     df['PolicyCurrency'] = df[' Plan Currency']
     df['HoldingName'] = df[' Fund Name']
@@ -436,7 +441,8 @@ def utmostLumpsum(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Valuation GP52024_PF911076.csv",encoding = "ISO-8859-1")
+    df = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\Utmost\Valuation GP52024_PF911076.csv",encoding = "ISO-8859-1")
+    # df = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\DataFeeds\Valuation GP52024_PF911076.csv",encoding = "ISO-8859-1")
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Utmost+LumpSum.xlsx')
 
     df['ValuationDate'] = df['Valuation Date']
@@ -446,12 +452,12 @@ def utmostLumpsum(request):
     df['PolicyCurrency'] = df['Plan Currency']
     df['HoldingName'] = df['Security Issuer']+' '+df['Security Name']
     df['HoldingReference'] = df['PolicyNumber']+'-'+df['HoldingName']
-    # df['HoldingCurrency'] = df['Security Currency']
+    df['HoldingCurrency'] = df['Asset Currency']
     df['SEDOL'] = df['SEDOL']
     df['ISIN'] = df['ISIN']
-    # df['Units'] = df['Security Holding']
-    # df['UnitPrice'] = df['Security Currency Market Bid Price']
-    df['HoldingMarketValueHoldingCurrency'] = df['Investment Currency Market Value']
+    df['Units'] = df['Asset Holding']
+    df['UnitPrice'] = df['Asset Currency Market Bid Price']
+    df['HoldingMarketValueHoldingCurrency'] = df['Asset Currency Market Value']
     df['HoldingMarketValuePolicyCurrency'] = df['Plan Currency Market Value']
     df['BookCost'] = df['Plan Currency Book Cost']
     df['GainLoss'] = df['Plan Currency % Growth']
@@ -585,12 +591,12 @@ def rl360(request):
     
 
     # df_Holdings = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_Holdings.csv",encoding = "ISO-8859-1")
-    df_Holdings = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/RL360-3/20230728-DF_432-DATAFEEDS_ZIPPED/DF_432_Holdings.csv",encoding = "ISO-8859-1")
-    df_CashHoldings = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_CashHoldings.csv",encoding = "ISO-8859-1")
+    df_Holdings = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_Holdings.csv",encoding = "ISO-8859-1")
+    df_CashHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_CashHoldings.csv",encoding = "ISO-8859-1")
     # df_Policy = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_Policy.csv",encoding = "ISO-8859-1")
-    df_Policy = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/RL360-3/20230728-DF_432-DATAFEEDS_ZIPPED/DF_432_Policy.csv",encoding = "ISO-8859-1")
-    df_PremiumHistory = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_PremHist.csv",encoding = "ISO-8859-1")
-    df_CashTransaction = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_CashTranHist.csv",encoding = "ISO-8859-1")
+    df_Policy = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_Policy.csv",encoding = "ISO-8859-1")
+    df_PremiumHistory = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_PremHist.csv",encoding = "ISO-8859-1")
+    df_CashTransaction = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_CashTranHist.csv",encoding = "ISO-8859-1")
 
 
     df_Holdings['ValuationDate'] = df_Holdings['System_Dt']
@@ -845,10 +851,10 @@ def zurich(request):
     # subject_name = 'Datafeeds_Provider_ZURICH'
     # files = collect_attachments_rl360(email_address, subject_name, client_id, client_secret, tenant_id)
     
-    df_Holdings = pd.read_csv('https://skybound-client-app.s3.eu-north-1.amazonaws.com/HoldingsZurich.csv',encoding = "ISO-8859-1")
-    df_Policy = pd.read_csv('https://skybound-client-app.s3.eu-north-1.amazonaws.com/PolicyZurich.csv',encoding = "ISO-8859-1")
-    df_PolicyPremium = pd.read_csv('https://skybound-client-app.s3.eu-north-1.amazonaws.com/PolicyPremiumZurich.csv',encoding = "ISO-8859-1")
-    df_TransactionHistory = pd.read_csv('https://skybound-client-app.s3.eu-north-1.amazonaws.com/TransactionHistoryZurich.csv',encoding = "ISO-8859-1")
+    df_Holdings = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Zurich Oct 2023\PolicyFunds.csv',encoding = "ISO-8859-1")
+    df_Policy = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Zurich Oct 2023\Policy.csv',encoding = "ISO-8859-1")
+    df_PolicyPremium = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Zurich Oct 2023\PolicyPremium.csv',encoding = "ISO-8859-1")
+    df_TransactionHistory = pd.read_csv(r'C:\WorkSpace\Datafeeds\Datafeeds\Zurich Oct 2023\TransactionHistory.csv',encoding = "ISO-8859-1")
 
 
 
@@ -870,7 +876,7 @@ def zurich(request):
             'HoldingReference',
             'SEDOL',
             'HoldingCurrency',
-            # 'PolicyCurrency',
+            'PolicyCurrency',
             'UnitPrice',
             'Units',
             'HoldingMarketValueHoldingCurrency',
@@ -890,7 +896,7 @@ def zurich(request):
     df_Policy['TotalContribution'] = df_Policy['Total Contributions']
     df_Policy['Withdrawals'] = df_Policy['Total Withdrawals']
     df_Policy['SurrenderValue'] = df_Policy['Surrender Value']
-    df_Policy['BrokerID'] = df_Policy['Agent Number']
+    # df_Policy['BrokerID'] = df_Policy['Agent Number']
     df_Policy['MaxPartialValue'] = df_Policy['Max Partial Surrender']
 
 
@@ -906,7 +912,7 @@ def zurich(request):
         'TotalContribution',
         'Withdrawals',
         'SurrenderValue',
-        'BrokerID',
+        # 'BrokerID',
         'MaxPartialValue',
     ]]
 
@@ -921,7 +927,7 @@ def zurich(request):
         'PolicyNumber',
         'ContributionCurrency',
         'ContributionFrequency',
-        # 'RegularContribution',
+        'RegularContribution',
         'LastContributionDate',
         'NumberOfPremiumsMissed',
     ]]
@@ -941,24 +947,7 @@ def zurich(request):
         'TransactionCurrency'
     ]]
 
-    merged_df_1 = holdings.merge(
-        policy,
-        on=['PolicyNumber'],
-        how='inner'
-    )
-    merged_df_2 = merged_df_1.merge(
-        policyPremium,
-        on=['PolicyNumber'],
-        how='inner'
-    )
-    merged_df_3 = merged_df_2.merge(
-        transactionHistory,
-        on=['PolicyNumber'],
-        how='inner'
-    )
-
-    new_df = merged_df_3
-    financial_account = new_df.drop_duplicates(subset='PolicyNumber')
+    financial_account = policy.drop_duplicates(subset='PolicyNumber')
 
     def convert_date_format(date_str):
         date_str = str(date_str)
@@ -995,60 +984,60 @@ def zurich(request):
         except ValueError:
             return None
     
-    for index,row in new_df.iterrows():
+    for index,row in holdings.iterrows():
         data = Policy(
             provider = 'Zurich',
             provider_id = 'a4v3H000000D225',
             db_entry_date = datetime.date.today().isoformat(),
-            valuation_date = convert_date_format(row['ValuationDate']),#
-            broker_id = row['BrokerID'],
-            policy_number = row['PolicyNumber'],#
-            policy_currency = row['PolicyCurrency'],#
-            policy_start_date = convert_date_format(row['PolicyStartDate']),
+            valuation_date = convert_date_format(row['ValuationDate']),#@
+            # broker_id = row['BrokerID'],
+            policy_number = row['PolicyNumber'],#@
+            policy_currency = row['PolicyCurrency'],#@
+            policy_start_date = None,
             policy_end_date = None,
-            policy_status = row['PolicyStatus'],
-            product = row['Product'],
-            holding_name = row['HoldingName'],#
-            holding_currency = row['HoldingCurrency'],#
-            units = row['Units'],#
-            unit_price = row['UnitPrice'],#
+            policy_status = None,
+            product = None,
+            holding_name = row['HoldingName'],#@
+            holding_currency = row['HoldingCurrency'],#@
+            units = row['Units'],#@
+            unit_price = row['UnitPrice'],#@
             price_date = None,#
-            total_contribution = row['TotalContribution'],
-            holding_market_value_holding_currency = row['HoldingMarketValueHoldingCurrency'],#
-            holding_market_value_policy_currency = row['HoldingMarketValuePolicyCurrency'],#
+            total_contribution = None,
+            holding_market_value_holding_currency = row['HoldingMarketValueHoldingCurrency'],#@
+            holding_market_value_policy_currency = row['HoldingMarketValuePolicyCurrency'],#@
             isin = None,
-            sedol = row['SEDOL'],#
+            sedol = row['SEDOL'],#@
             book_cost = None,
             gain_loss = None,
-            holding_reference = row['HoldingReference'],#
+            holding_reference = row['HoldingReference'],#@
             trust = None,
             surrender_penalty = None,
-            max_partial_value = row['MaxPartialValue'],
-            surrender_value = row['SurrenderValue'],
+            max_partial_value = None,
+            surrender_value = None,
             sub_policies = None,
             policy_basis = None,
-            transaction_date = convert_date_format(row['TransactionDate']),
-            transaction_name = row['TransactionName'],
+            transaction_date = None,
+            transaction_name = None,
             transaction_comments = None,
             transaction_debit_amount = None,
             transaction_credit_amount = None,
-            transaction_amount = row['TransactionAmount'],
-            transaction_currency = row['TransactionCurrency'],
+            transaction_amount = None,
+            transaction_currency = None,
             #Added
-            regular_contribution = row['RegularContribution'],#FA
-            single_contribution = row['SingleContribution'],
-            policy_term = removeNAN(row['PolicyTerm']),#FA
-            contribution_frequency = row['ContributionFrequency'],#FA
+            regular_contribution = None,#FA
+            single_contribution = None,
+            policy_term = None,#FA
+            contribution_frequency = None,#FA
             # contribution_due_date = 'ContributionDueDate'],
             # contribution_received_date = 'ContributionReceivedDate'],
             next_contribution_date = None,
-            last_contribution_date = convert_date_format(row['LastContributionDate']),#FA
-            contribution_currency = row['ContributionCurrency'],
-            withdrawals = row['Withdrawals'],
+            last_contribution_date = None,#FA
+            contribution_currency = None,
+            withdrawals = None,
             arrears = None,
             # contribution_due = 'ContributionDue'],
             # contribution_received = 'ContributionReceived'],
-            number_premiums_missed = row['NumberOfPremiumsMissed'],#FA
+            number_premiums_missed = None,#FA
             #SELF CALCULATED FIELD
             arrear_status = None,#FA
         )
@@ -1058,39 +1047,679 @@ def zurich(request):
         data = FinancialAccountModel(
             provider = 'Zurich',
             provider_id = 'a4v3H000000D225',
-            product = row['Product'],
-            policy_number = row['PolicyNumber'],
-            valuation_date = convert_date_format(row['ValuationDate']),
-            policy_currency = row['PolicyCurrency'],
-            policy_start_date = convert_date_format(row['PolicyStartDate']),
+            product = row['Product'],#
+            policy_number = row['PolicyNumber'],#
+            valuation_date = None,
+            policy_currency = row['PolicyCurrency'],#
+            policy_start_date = convert_date_format(row['PolicyStartDate']),#
             policy_end_date = None,
             sub_policies = None,
             sub_product_type = None,
             policy_basis = None,
             business_split = None,
-            account_status = row['PolicyStatus'],
-            regular_contribution = row['RegularContribution'],
-            lumpsum_contribution = row['TotalContribution'],
-            policy_term = removeNAN(row['PolicyTerm']),
-            contribution_frequency = row['ContributionFrequency'],
+            account_status = row['PolicyStatus'],#
+            regular_contribution = row['RegularContribution'],#
+            lumpsum_contribution = row['TotalContribution'],#
+            policy_term = removeNAN(row['PolicyTerm']),#
+            contribution_frequency = None,
             next_contribution_date = None,
-            last_contribution_date = convert_date_format(row['LastContributionDate']),
-            number_premiums_missed = row['NumberOfPremiumsMissed'],
+            last_contribution_date = None,
+            number_premiums_missed = None,
             arrear_status = None
         )
         data.save()
 
     return HttpResponse('Data Saved')
 
-def fpi(request):
+def fpiLumpsum(request):
+    df_LumpsumHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractBondHolding.CSV",encoding = "ISO-8859-1")
+    df_RegularHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifePolicyHolding.CSV",encoding = "ISO-8859-1")
+    df_PlanDetails = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractPlanDetail.CSV",encoding = "ISO-8859-1")
+    df_RegularPlanDetails = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifePolicyDetail.CSV",encoding = "ISO-8859-1")
+    df_PremiumHistory = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifePremiumTotal.CSV",encoding = "ISO-8859-1")
+    df_CashHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractBondAccount.CSV",encoding = "ISO-8859-1")
+    df_TransactionHistory = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifeTransactionHistory.CSV",encoding = "ISO-8859-1")
+
+    df_LumpsumHoldings['ValuationDate'] = df_LumpsumHoldings['DatabaseDate']
+    df_LumpsumHoldings['PolicyNumber'] = df_LumpsumHoldings['PlanNumber']
+    df_LumpsumHoldings['HoldingName'] = df_LumpsumHoldings['InvestmentDescription']
+    df_LumpsumHoldings['HoldingReference'] = df_LumpsumHoldings['PlanNumber'].astype('str')+'-'+df_LumpsumHoldings['InvestmentDescription']
+    df_LumpsumHoldings['SEDOL'] = df_LumpsumHoldings['FundCode']
+    df_LumpsumHoldings['ISIN'] = df_LumpsumHoldings['FundISINCode']
+    df_LumpsumHoldings['Units'] = df_LumpsumHoldings['UnitsHeld']
+    df_LumpsumHoldings['UnitPrice'] = df_LumpsumHoldings['UnitPrice']
+    df_LumpsumHoldings['PriceDate'] = df_LumpsumHoldings['PriceDate']
+    df_LumpsumHoldings['HoldingCurrency'] = df_LumpsumHoldings['InvestmentCurrencyISO']
+    df_LumpsumHoldings['HoldingMarketValueHoldingCurrency'] = df_LumpsumHoldings['InvestmentCurrencyValue']
+    df_LumpsumHoldings['PolicyCurrency'] = df_LumpsumHoldings['ValuationCurrencyISO']
+    df_LumpsumHoldings['HoldingMarketValuePolicyCurrency'] = df_LumpsumHoldings['ValuationCurrencyValue']
+    df_LumpsumHoldings['BookCost'] = df_LumpsumHoldings['BookCost']
+    df_LumpsumHoldings['GainLoss'] = (df_LumpsumHoldings['ValuationCurrencyValue']/df_LumpsumHoldings['BookCost'])-1
+
+    lumpsumHoldings = df_LumpsumHoldings[[
+        'ValuationDate',
+        'PolicyNumber',
+        'HoldingName',
+        'HoldingReference',
+        'SEDOL',
+        'ISIN',
+        'Units',
+        'UnitPrice',
+        'PriceDate',
+        'HoldingCurrency',
+        'HoldingMarketValueHoldingCurrency',
+        'PolicyCurrency',
+        'HoldingMarketValuePolicyCurrency',
+        'BookCost',
+        'GainLoss'
+    ]]
+
+    df_RegularHoldings['ValuationDate'] = df_RegularHoldings['DatabaseDate']
+    df_RegularHoldings['PolicyNumber'] = df_RegularHoldings['PlanNumber']
+    df_RegularHoldings['ISIN'] = df_RegularHoldings['FundISINCode']
+    df_RegularHoldings['HoldingName'] = df_RegularHoldings['FundDescription']
+    df_RegularHoldings['HoldingReference'] = df_RegularHoldings['PlanNumber'].astype('str')+'-'+df_RegularHoldings['FundDescription']
+    df_RegularHoldings['Units'] = df_RegularHoldings['UnitsHeld']
+    df_RegularHoldings['UnitPrice'] = df_RegularHoldings['BidPrice']
+    df_RegularHoldings['PriceDate'] = df_RegularHoldings['PriceDate']
+    df_RegularHoldings['HoldingCurrency'] = df_RegularHoldings['FundCurrencyISO']
+    df_RegularHoldings['HoldingMarketValueHoldingCurrency'] = df_RegularHoldings['FundCurrencyValue']
+    df_RegularHoldings['PolicyCurrency'] = df_RegularHoldings['ValuationCurrencyISO']
+    df_RegularHoldings['HoldingMarketValuePolicyCurrency'] = df_RegularHoldings['ValuationCurrencyValue']
+
+
+    regularHolding = df_RegularHoldings[[
+        'ValuationDate',
+        'PolicyNumber',
+        'ISIN',
+        'HoldingName',
+        'HoldingReference',
+        'Units',
+        'UnitPrice',
+        'PriceDate',
+        'HoldingCurrency',
+        'HoldingMarketValueHoldingCurrency',
+        'PolicyCurrency',
+        'HoldingMarketValuePolicyCurrency',
+    ]]
+
+
+    df_PlanDetails['ValuationDate'] = df_PlanDetails['DatabaseDate']
+    df_PlanDetails['PolicyNumber'] = df_PlanDetails['PlanNumber']
+    df_PlanDetails['PolicyBasis'] = df_PlanDetails['PlanType']
+    df_PlanDetails['Product'] = df_PlanDetails['ProductName']
+    df_PlanDetails['SubPolicies'] = df_PlanDetails['PolicyCount']
+    df_PlanDetails['PolicyStatus'] = df_PlanDetails['PlanStatus']
+    df_PlanDetails['PolicyCurrency'] = df_PlanDetails['PlanCurrencyISO']
+    df_PlanDetails['HoldingCurrency'] = df_PlanDetails['ValuationCurrencyISO']
+    df_PlanDetails['PolicyStartDate'] = df_PlanDetails['CommencementDate']
+    df_PlanDetails['RegularContribution'] = df_PlanDetails['Premium']
+    df_PlanDetails['ContributionFrequency'] = df_PlanDetails['PremiumFrequency']
+    df_PlanDetails['BrokerID'] = df_PlanDetails['IntermediaryID']
+    df_PlanDetails['PolicyTerm'] = df_PlanDetails['TermInMonths']/12
+
+    planDetails = df_PlanDetails[[
+        'ValuationDate',
+        'PolicyNumber',
+        'PolicyBasis',
+        'Product',
+        'SubPolicies',
+        'PolicyStatus',
+        'PolicyCurrency',
+        'HoldingCurrency',
+        'PolicyStartDate',
+        'RegularContribution',
+        'ContributionFrequency',
+        'BrokerID',
+        'PolicyTerm',
+    ]]
+
+    df_RegularPlanDetails['ValuationDate'] = df_RegularPlanDetails['DatabaseDate']
+    df_RegularPlanDetails['PolicyNumber'] = df_RegularPlanDetails['PlanNumber']
+    df_RegularPlanDetails['PolicyStatus'] = df_RegularPlanDetails['PremiumStatus']
+    df_RegularPlanDetails['PolicyEndDate'] = df_RegularPlanDetails['BenefitPremiumCessationDate']
+
+    regularPlanDetails = df_RegularPlanDetails[[
+        'ValuationDate',
+        'PolicyNumber',
+        'PolicyStatus',
+        'PolicyEndDate',
+    ]]
+
+    # df_PremiumHistory['ValuationDate'] = df_PremiumHistory['DatabaseDate']
+    # df_PremiumHistory['PolicyNumber'] = df_PremiumHistory['PlanNumber']
+    # df_PremiumHistory['ContributionDueDate'] = df_PremiumHistory['DateExpected']
+    # df_PremiumHistory['ContributionReceivedDate'] = df_PremiumHistory['DateReceived']
+    # df_PremiumHistory['ContributionReceived'] = df_PremiumHistory['PremiumAmount']
+    # df_PremiumHistory['ContributionCurrency'] = df_PremiumHistory['CurrencyISO']
+
+
+    # premiumHistory = df_PremiumHistory[[
+    #     'ValuationDate',
+    #     'PolicyNumber',
+    #     'ContributionDueDate',
+    #     'ContributionReceivedDate',
+    #     'ContributionReceived',
+    #     'ContributionCurrency'
+    # ]]
+
+
+    # df_CashHoldings['ValuationDate'] = df_CashHoldings['DatabaseDate']
+    # df_CashHoldings['PolicyNumber'] = df_CashHoldings['PlanNumber']
+    # df_CashHoldings['HoldingName'] = df_CashHoldings['AccountCurrencyISO']
+    # df_CashHoldings['PolicyCurrency'] = df_CashHoldings['ValuationCurrencyISO']
+    # df_CashHoldings['HoldingMarketValuePolicyCurrency'] = df_CashHoldings['ValuationCurrencyValue']
+
+
+    # cashHoldings = df_CashHoldings[[
+    #     'ValuationDate',
+    #     'PolicyNumber',
+    #     'HoldingName',
+    #     'PolicyCurrency',
+    #     'HoldingMarketValuePolicyCurrency',
+    # ]]
+
+
+    # df_TransactionHistory['TransactionDate'] = df_TransactionHistory['TransactionDate']
+    # df_TransactionHistory['TransactionName'] = df_TransactionHistory['TransactionType']
+    # df_TransactionHistory['TransactionCurrency'] = df_TransactionHistory['MovementCurrencyISO']
+    # df_TransactionHistory['TransactionValue'] = df_TransactionHistory['MovementValue']
+
+    # transactionHistory = df_TransactionHistory[[
+    #     'TransactionDate',
+    #     'TransactionName',
+    #     'TransactionCurrency',
+    #     'TransactionValue'
+    # ]]
+
+    financial_account_lumpsum = planDetails.drop_duplicates(subset='PolicyNumber')
+    # financial_account_regular = regularPlanDetails.drop_duplicates(subset='PolicyNumber')
+
+
+    def convert_date_format(date_str):
+        if isinstance(date_str, float) and math.isnan(date_str):
+            # Replace 'nan' with today's date
+            return datetime.datetime.now().strftime('%Y-%m-%d')
+        elif isinstance(date_str, pd.Timestamp):
+            # Convert Pandas Timestamp to datetime object
+            date_obj = date_str.to_pydatetime()
+            return date_obj.strftime('%Y-%m-%d')
+        elif isinstance(date_str, str):
+            try:
+                # Try to parse the date string as it is
+                date_obj = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+                return date_obj.strftime('%Y-%m-%d')
+            except ValueError:
+                # Handle any other date formats here
+                return datetime.datetime(1970, 1, 1).strftime('%Y-%m-%d')  # Return None for unparseable dates
+        else:
+            # Handle other data types
+            return datetime.datetime(1970, 1, 1).strftime('%Y-%m-%d')  # Return None for unsupported data types
+    
+    def removeNAN(value):
+        if isinstance(value, (int, float)) and math.isnan(value):
+            return None
+        return value
+
+    for index,row in lumpsumHoldings.iterrows():
+        data = Policy(
+            provider = 'FPI Lumpsum',
+            provider_id = 'a4v3H000000D22S',
+            db_entry_date = datetime.date.today().isoformat(),
+            valuation_date = convert_date_format(row['ValuationDate']),#
+            broker_id = None,
+            policy_number = row['PolicyNumber'],#
+            policy_currency = row['PolicyCurrency'],#
+            policy_start_date = None,
+            policy_end_date = None,
+            policy_status = None,
+            product = None,
+            holding_name = row['HoldingName'],#
+            holding_currency = row['HoldingCurrency'],#
+            units = row['Units'],#
+            unit_price = row['UnitPrice'],#
+            price_date = convert_date_format(row['PriceDate']),#
+            total_contribution = None,
+            holding_market_value_holding_currency = row['HoldingMarketValueHoldingCurrency'],#
+            holding_market_value_policy_currency = row['HoldingMarketValuePolicyCurrency'],#
+            isin = row['ISIN'],
+            sedol = row['SEDOL'],#
+            book_cost = row['BookCost'],#
+            gain_loss = row['GainLoss'],#
+            holding_reference = row['HoldingReference'],#
+            trust = None,
+            surrender_penalty = None,
+            max_partial_value = None,
+            surrender_value = None,
+            sub_policies = None,
+            policy_basis = None,
+            transaction_date = None,
+            transaction_name = None,
+            transaction_comments = None,
+            transaction_debit_amount = None,
+            transaction_credit_amount = None,
+            transaction_amount = None,
+            transaction_currency = None,
+            #Added
+            regular_contribution = None,#FA
+            single_contribution = None,
+            # policy_term = None,#FA
+            contribution_frequency = None,#FA
+            # contribution_due_date = row['ContributionDueDate'],
+            # contribution_received_date = row['ContributionReceivedDate'],
+            next_contribution_date = None,#FA
+            last_contribution_date = None,#FA
+            contribution_currency = None,
+            withdrawals = None,
+            arrears = None,
+            # contribution_due = row['ContributionDue'],
+            # contribution_received = row['ContributionReceived'],
+            number_premiums_missed = None,#FA
+            #SELF CALCULATED FIELD
+            arrear_status = None,#FA
+        )
+        data.save()
+
+    # for index,row in regularHolding.iterrows():
+    #     data = Policy(
+    #         provider = 'FPI Regular',
+    #         provider_id = 'a4v3H000000D22S',
+    #         db_entry_date = datetime.date.today().isoformat(),
+    #         valuation_date = convert_date_format(row['ValuationDate']),#@
+    #         broker_id = None,
+    #         policy_number = row['PolicyNumber'],#@
+    #         policy_currency = row['PolicyCurrency'],#@
+    #         policy_start_date = None,
+    #         policy_end_date = None,
+    #         policy_status = None,
+    #         product = None,
+    #         holding_name = row['HoldingName'],#@
+    #         holding_currency = row['HoldingCurrency'],#@
+    #         units = row['Units'],#@
+    #         unit_price = row['UnitPrice'],#@
+    #         price_date = convert_date_format(row['PriceDate']),#@
+    #         total_contribution = None,
+    #         holding_market_value_holding_currency = row['HoldingMarketValueHoldingCurrency'],#@
+    #         holding_market_value_policy_currency = row['HoldingMarketValuePolicyCurrency'],#@
+    #         isin = row['ISIN'],#@
+    #         sedol = None,#
+    #         book_cost = None,#
+    #         gain_loss = None,#
+    #         holding_reference = row['HoldingReference'],#@
+    #         trust = None,
+    #         surrender_penalty = None,
+    #         max_partial_value = None,
+    #         surrender_value = None,
+    #         sub_policies = None,
+    #         policy_basis = None,
+    #         transaction_date = None,
+    #         transaction_name = None,
+    #         transaction_comments = None,
+    #         transaction_debit_amount = None,
+    #         transaction_credit_amount = None,
+    #         transaction_amount = None,
+    #         transaction_currency = None,
+    #         #Added
+    #         regular_contribution = None,#FA
+    #         single_contribution = None,
+    #         # policy_term = None,#FA
+    #         contribution_frequency = None,#FA
+    #         # contribution_due_date = row['ContributionDueDate'],
+    #         # contribution_received_date = row['ContributionReceivedDate'],
+    #         next_contribution_date = None,#FA
+    #         last_contribution_date = None,#FA
+    #         contribution_currency = None,
+    #         withdrawals = None,
+    #         arrears = None,
+    #         # contribution_due = row['ContributionDue'],
+    #         # contribution_received = row['ContributionReceived'],
+    #         number_premiums_missed = None,#FA
+    #         #SELF CALCULATED FIELD
+    #         arrear_status = None,#FA
+    #     )
+    #     data.save()
+
+    for index,row in financial_account_lumpsum.iterrows():
+        data = FinancialAccountModel(
+            provider = 'FPI Lumpsum',
+            provider_id = 'a4v3H000000D22S',
+            product = row['Product'],#
+            policy_number = row['PolicyNumber'],#
+            valuation_date = convert_date_format(row['ValuationDate']),#
+            policy_currency = row['PolicyCurrency'],#
+            policy_start_date = convert_date_format(row['PolicyStartDate']),#
+            policy_end_date = None,
+            sub_policies = row['SubPolicies'],#
+            sub_product_type = None,
+            policy_basis = row['PolicyBasis'],#
+            business_split = None,
+            account_status = row['PolicyStatus'],#
+            regular_contribution = row['RegularContribution'],#
+            lumpsum_contribution = None,
+            policy_term = removeNAN(row['PolicyTerm']),#
+            contribution_frequency = row['ContributionFrequency'],#
+            next_contribution_date = None,
+            last_contribution_date = None,
+            number_premiums_missed = None,
+            arrear_status = None
+        )
+        data.save()
+    
+    # for index,row in financial_account_regular.iterrows():
+    #     data = FinancialAccountModel(
+    #         provider = 'FPI Regular',
+    #         provider_id = 'a4v3H000000D22S',
+    #         product = None,#
+    #         policy_number = row['PolicyNumber'],#@
+    #         valuation_date = convert_date_format(row['ValuationDate']),#@
+    #         policy_currency = None,#
+    #         policy_start_date = None,#
+    #         policy_end_date =  convert_date_format(row['PolicyEndDate']),#@
+    #         sub_policies = None,#
+    #         sub_product_type = None,
+    #         policy_basis = None,#
+    #         business_split = None,
+    #         account_status = row['PolicyStatus'],#@
+    #         regular_contribution = None,#
+    #         lumpsum_contribution = None,
+    #         policy_term = None,#
+    #         contribution_frequency = None,#
+    #         next_contribution_date = None,
+    #         last_contribution_date = None,
+    #         number_premiums_missed = None,
+    #         arrear_status = None
+    #     )
+    #     data.save()
+
     return HttpResponse('Data Saved')
+
+
+def fpiRegular(request):
+    df_LumpsumHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractBondHolding.CSV",encoding = "ISO-8859-1")
+    df_RegularHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifePolicyHolding.CSV",encoding = "ISO-8859-1")
+    df_PlanDetails = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractPlanDetail.CSV",encoding = "ISO-8859-1")
+    df_RegularPlanDetails = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifePolicyDetail.CSV",encoding = "ISO-8859-1")
+    df_PremiumHistory = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifePremiumTotal.CSV",encoding = "ISO-8859-1")
+    df_CashHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractBondAccount.CSV",encoding = "ISO-8859-1")
+    df_TransactionHistory = pd.read_csv(r"C:\WorkSpace\Datafeeds\files\fpi\linkplus extractLifeTransactionHistory.CSV",encoding = "ISO-8859-1")
+
+    df_LumpsumHoldings['ValuationDate'] = df_LumpsumHoldings['DatabaseDate']
+    df_LumpsumHoldings['PolicyNumber'] = df_LumpsumHoldings['PlanNumber']
+    df_LumpsumHoldings['HoldingName'] = df_LumpsumHoldings['InvestmentDescription']
+    df_LumpsumHoldings['HoldingReference'] = df_LumpsumHoldings['PlanNumber'].astype('str')+'-'+df_LumpsumHoldings['InvestmentDescription']
+    df_LumpsumHoldings['SEDOL'] = df_LumpsumHoldings['FundCode']
+    df_LumpsumHoldings['ISIN'] = df_LumpsumHoldings['FundISINCode']
+    df_LumpsumHoldings['Units'] = df_LumpsumHoldings['UnitsHeld']
+    df_LumpsumHoldings['UnitPrice'] = df_LumpsumHoldings['UnitPrice']
+    df_LumpsumHoldings['PriceDate'] = df_LumpsumHoldings['PriceDate']
+    df_LumpsumHoldings['HoldingCurrency'] = df_LumpsumHoldings['InvestmentCurrencyISO']
+    df_LumpsumHoldings['HoldingMarketValueHoldingCurrency'] = df_LumpsumHoldings['InvestmentCurrencyValue']
+    df_LumpsumHoldings['PolicyCurrency'] = df_LumpsumHoldings['ValuationCurrencyISO']
+    df_LumpsumHoldings['HoldingMarketValuePolicyCurrency'] = df_LumpsumHoldings['ValuationCurrencyValue']
+    df_LumpsumHoldings['BookCost'] = df_LumpsumHoldings['BookCost']
+    df_LumpsumHoldings['GainLoss'] = (df_LumpsumHoldings['ValuationCurrencyValue']/df_LumpsumHoldings['BookCost'])-1
+
+    lumpsumHoldings = df_LumpsumHoldings[[
+        'ValuationDate',
+        'PolicyNumber',
+        'HoldingName',
+        'HoldingReference',
+        'SEDOL',
+        'ISIN',
+        'Units',
+        'UnitPrice',
+        'PriceDate',
+        'HoldingCurrency',
+        'HoldingMarketValueHoldingCurrency',
+        'PolicyCurrency',
+        'HoldingMarketValuePolicyCurrency',
+        'BookCost',
+        'GainLoss'
+    ]]
+
+    df_RegularHoldings['ValuationDate'] = df_RegularHoldings['DatabaseDate']
+    df_RegularHoldings['PolicyNumber'] = df_RegularHoldings['PlanNumber']
+    df_RegularHoldings['ISIN'] = df_RegularHoldings['FundISINCode']
+    df_RegularHoldings['HoldingName'] = df_RegularHoldings['FundDescription']
+    df_RegularHoldings['HoldingReference'] = df_RegularHoldings['PlanNumber'].astype('str')+'-'+df_RegularHoldings['FundDescription']
+    df_RegularHoldings['Units'] = df_RegularHoldings['UnitsHeld']
+    df_RegularHoldings['UnitPrice'] = df_RegularHoldings['BidPrice']
+    df_RegularHoldings['PriceDate'] = df_RegularHoldings['PriceDate']
+    df_RegularHoldings['HoldingCurrency'] = df_RegularHoldings['FundCurrencyISO']
+    df_RegularHoldings['HoldingMarketValueHoldingCurrency'] = df_RegularHoldings['FundCurrencyValue']
+    df_RegularHoldings['PolicyCurrency'] = df_RegularHoldings['ValuationCurrencyISO']
+    df_RegularHoldings['HoldingMarketValuePolicyCurrency'] = df_RegularHoldings['ValuationCurrencyValue']
+
+
+    regularHolding = df_RegularHoldings[[
+        'ValuationDate',
+        'PolicyNumber',
+        'ISIN',
+        'HoldingName',
+        'HoldingReference',
+        'Units',
+        'UnitPrice',
+        'PriceDate',
+        'HoldingCurrency',
+        'HoldingMarketValueHoldingCurrency',
+        'PolicyCurrency',
+        'HoldingMarketValuePolicyCurrency',
+    ]]
+
+
+    df_PlanDetails['ValuationDate'] = df_PlanDetails['DatabaseDate']
+    df_PlanDetails['PolicyNumber'] = df_PlanDetails['PlanNumber']
+    df_PlanDetails['PolicyBasis'] = df_PlanDetails['PlanType']
+    df_PlanDetails['Product'] = df_PlanDetails['ProductName']
+    df_PlanDetails['SubPolicies'] = df_PlanDetails['PolicyCount']
+    df_PlanDetails['PolicyStatus'] = df_PlanDetails['PlanStatus']
+    df_PlanDetails['PolicyCurrency'] = df_PlanDetails['PlanCurrencyISO']
+    df_PlanDetails['HoldingCurrency'] = df_PlanDetails['ValuationCurrencyISO']
+    df_PlanDetails['PolicyStartDate'] = df_PlanDetails['CommencementDate']
+    df_PlanDetails['RegularContribution'] = df_PlanDetails['Premium']
+    df_PlanDetails['ContributionFrequency'] = df_PlanDetails['PremiumFrequency']
+    df_PlanDetails['BrokerID'] = df_PlanDetails['IntermediaryID']
+    df_PlanDetails['PolicyTerm'] = df_PlanDetails['TermInMonths']/12
+
+    planDetails = df_PlanDetails[[
+        'ValuationDate',
+        'PolicyNumber',
+        'PolicyBasis',
+        'Product',
+        'SubPolicies',
+        'PolicyStatus',
+        'PolicyCurrency',
+        'HoldingCurrency',
+        'PolicyStartDate',
+        'RegularContribution',
+        'ContributionFrequency',
+        'BrokerID',
+        'PolicyTerm',
+    ]]
+
+    df_RegularPlanDetails['ValuationDate'] = df_RegularPlanDetails['DatabaseDate']
+    df_RegularPlanDetails['PolicyNumber'] = df_RegularPlanDetails['PlanNumber']
+    df_RegularPlanDetails['PolicyStatus'] = df_RegularPlanDetails['PremiumStatus']
+    df_RegularPlanDetails['PolicyEndDate'] = df_RegularPlanDetails['BenefitPremiumCessationDate']
+
+    regularPlanDetails = df_RegularPlanDetails[[
+        'ValuationDate',
+        'PolicyNumber',
+        'PolicyStatus',
+        'PolicyEndDate',
+    ]]
+
+    # df_PremiumHistory['ValuationDate'] = df_PremiumHistory['DatabaseDate']
+    # df_PremiumHistory['PolicyNumber'] = df_PremiumHistory['PlanNumber']
+    # df_PremiumHistory['ContributionDueDate'] = df_PremiumHistory['DateExpected']
+    # df_PremiumHistory['ContributionReceivedDate'] = df_PremiumHistory['DateReceived']
+    # df_PremiumHistory['ContributionReceived'] = df_PremiumHistory['PremiumAmount']
+    # df_PremiumHistory['ContributionCurrency'] = df_PremiumHistory['CurrencyISO']
+
+
+    # premiumHistory = df_PremiumHistory[[
+    #     'ValuationDate',
+    #     'PolicyNumber',
+    #     'ContributionDueDate',
+    #     'ContributionReceivedDate',
+    #     'ContributionReceived',
+    #     'ContributionCurrency'
+    # ]]
+
+
+    # df_CashHoldings['ValuationDate'] = df_CashHoldings['DatabaseDate']
+    # df_CashHoldings['PolicyNumber'] = df_CashHoldings['PlanNumber']
+    # df_CashHoldings['HoldingName'] = df_CashHoldings['AccountCurrencyISO']
+    # df_CashHoldings['PolicyCurrency'] = df_CashHoldings['ValuationCurrencyISO']
+    # df_CashHoldings['HoldingMarketValuePolicyCurrency'] = df_CashHoldings['ValuationCurrencyValue']
+
+
+    # cashHoldings = df_CashHoldings[[
+    #     'ValuationDate',
+    #     'PolicyNumber',
+    #     'HoldingName',
+    #     'PolicyCurrency',
+    #     'HoldingMarketValuePolicyCurrency',
+    # ]]
+
+
+    # df_TransactionHistory['TransactionDate'] = df_TransactionHistory['TransactionDate']
+    # df_TransactionHistory['TransactionName'] = df_TransactionHistory['TransactionType']
+    # df_TransactionHistory['TransactionCurrency'] = df_TransactionHistory['MovementCurrencyISO']
+    # df_TransactionHistory['TransactionValue'] = df_TransactionHistory['MovementValue']
+
+    # transactionHistory = df_TransactionHistory[[
+    #     'TransactionDate',
+    #     'TransactionName',
+    #     'TransactionCurrency',
+    #     'TransactionValue'
+    # ]]
+
+    financial_account_regular = planDetails.drop_duplicates(subset='PolicyNumber')
+
+
+    def convert_date_format(date_str):
+        if isinstance(date_str, float) and math.isnan(date_str):
+            # Replace 'nan' with today's date
+            return datetime.datetime.now().strftime('%Y-%m-%d')
+        elif isinstance(date_str, pd.Timestamp):
+            # Convert Pandas Timestamp to datetime object
+            date_obj = date_str.to_pydatetime()
+            return date_obj.strftime('%Y-%m-%d')
+        elif isinstance(date_str, str):
+            try:
+                # Try to parse the date string as it is
+                date_obj = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+                return date_obj.strftime('%Y-%m-%d')
+            except ValueError:
+                # Handle any other date formats here
+                return datetime.datetime(1970, 1, 1).strftime('%Y-%m-%d')  # Return None for unparseable dates
+        else:
+            # Handle other data types
+            return datetime.datetime(1970, 1, 1).strftime('%Y-%m-%d')  # Return None for unsupported data types
+    
+    def removeNAN(value):
+        if isinstance(value, (int, float)) and math.isnan(value):
+            return None
+        return value
+
+
+    for index,row in regularHolding.iterrows():
+        data = Policy(
+            provider = 'FPI Regular',
+            provider_id = 'a4v3H000000D22S',
+            db_entry_date = datetime.date.today().isoformat(),
+            valuation_date = convert_date_format(row['ValuationDate']),#@
+            broker_id = None,
+            policy_number = row['PolicyNumber'],#@
+            policy_currency = row['PolicyCurrency'],#@
+            policy_start_date = None,
+            policy_end_date = None,
+            policy_status = None,
+            product = None,
+            holding_name = row['HoldingName'],#@
+            holding_currency = row['HoldingCurrency'],#@
+            units = row['Units'],#@
+            unit_price = row['UnitPrice'],#@
+            price_date = convert_date_format(row['PriceDate']),#@
+            total_contribution = None,
+            holding_market_value_holding_currency = row['HoldingMarketValueHoldingCurrency'],#@
+            holding_market_value_policy_currency = row['HoldingMarketValuePolicyCurrency'],#@
+            isin = row['ISIN'],#@
+            sedol = None,#
+            book_cost = None,#
+            gain_loss = None,#
+            holding_reference = row['HoldingReference'],#@
+            trust = None,
+            surrender_penalty = None,
+            max_partial_value = None,
+            surrender_value = None,
+            sub_policies = None,
+            policy_basis = None,
+            transaction_date = None,
+            transaction_name = None,
+            transaction_comments = None,
+            transaction_debit_amount = None,
+            transaction_credit_amount = None,
+            transaction_amount = None,
+            transaction_currency = None,
+            #Added
+            regular_contribution = None,#FA
+            single_contribution = None,
+            # policy_term = None,#FA
+            contribution_frequency = None,#FA
+            # contribution_due_date = row['ContributionDueDate'],
+            # contribution_received_date = row['ContributionReceivedDate'],
+            next_contribution_date = None,#FA
+            last_contribution_date = None,#FA
+            contribution_currency = None,
+            withdrawals = None,
+            arrears = None,
+            # contribution_due = row['ContributionDue'],
+            # contribution_received = row['ContributionReceived'],
+            number_premiums_missed = None,#FA
+            #SELF CALCULATED FIELD
+            arrear_status = None,#FA
+        )
+        data.save()
+    
+    for index,row in financial_account_regular.iterrows():
+        data = FinancialAccountModel(
+            provider = 'FPI Lumpsum',
+            provider_id = 'a4v3H000000D22S',
+            product = row['Product'],#
+            policy_number = row['PolicyNumber'],#
+            valuation_date = convert_date_format(row['ValuationDate']),#
+            policy_currency = row['PolicyCurrency'],#
+            policy_start_date = convert_date_format(row['PolicyStartDate']),#
+            policy_end_date = None,
+            sub_policies = row['SubPolicies'],#
+            sub_product_type = None,
+            policy_basis = row['PolicyBasis'],#
+            business_split = None,
+            account_status = row['PolicyStatus'],#
+            regular_contribution = row['RegularContribution'],#
+            lumpsum_contribution = None,
+            policy_term = removeNAN(row['PolicyTerm']),#
+            contribution_frequency = row['ContributionFrequency'],#
+            next_contribution_date = None,
+            last_contribution_date = None,
+            number_premiums_missed = None,
+            arrear_status = None
+        )
+        data.save()
+
+
+    return HttpResponse('Data Saved')
+
 
 def hansard(request):
     subject_name = 'Datafeeds_Provider_HANSARD'
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/Hansard.xlsx')
+    df = pd.read_csv(r'C:\WorkSpace\Datafeeds\files\DataFeeds\HansardLS17213.csv',encoding = "ISO-8859-1")
+    # df = pd.read_excel(r'C:\WorkSpace\Datafeeds\files\DataFeeds\Hansard.xlsx')
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Hansard+Lumpsum.xlsx')
 
     df['PolicyNumber'] = df['Policy Number']
@@ -1113,18 +1742,29 @@ def hansard(request):
                 'HoldingReference',
                 'SEDOL',
                 'Units',
-                'HoldingCurrency','UnitPrice','PriceDate',
-                'HoldingMarketValueHoldingCurrency','BookCost','GainLoss','PolicyCurrency',
+                'HoldingCurrency',
+                'UnitPrice',
+                'PriceDate',
+                'HoldingMarketValueHoldingCurrency',
+                'BookCost',
+                'GainLoss',
+                'PolicyCurrency',
                 'HoldingMarketValuePolicyCurrency',
                 'ValuationDate'
                 ]]
-    financial_account = df.drop_duplicates(subset='PolicyNumber')[['PolicyNumber',
+    financial_account = df.drop_duplicates(subset='PolicyNumber')[[
+                'PolicyNumber',
                 'HoldingName',
                 'HoldingReference',
                 'SEDOL',
                 'Units',
-                'HoldingCurrency','UnitPrice','PriceDate',
-                'HoldingMarketValueHoldingCurrency','BookCost','GainLoss','PolicyCurrency',
+                'HoldingCurrency',
+                'UnitPrice',
+                'PriceDate',
+                'HoldingMarketValueHoldingCurrency',
+                'BookCost',
+                'GainLoss',
+                'PolicyCurrency',
                 'HoldingMarketValuePolicyCurrency',
                 'ValuationDate'
                 ]]
@@ -1198,7 +1838,7 @@ def hansard(request):
             product = None,
             policy_number = row['PolicyNumber'],
             valuation_date = row['ValuationDate'],
-            policy_currency = None,
+            policy_currency = row['PolicyCurrency'],
             policy_start_date = None,
             policy_end_date = None,
             sub_policies = None,
@@ -1260,7 +1900,8 @@ def providence(request):
     #     else:
     #         print('No files found in the remote folder.')
 
-    filename = process_sftp_file()
+    # filename = process_sftp_file()
+    filename = r'C:\WorkSpace\Datafeeds\services\231026##SkyBoundUAE.csv'
     print(filename)
     df = pd.read_csv(filename,encoding = "ISO-8859-1")
     # df = pd.read_excel('https://skybound-client-app.s3.eu-north-1.amazonaws.com/Providence.xlsx')
@@ -1524,7 +2165,7 @@ def seb(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/SEB Main Sept 2023.xls')
+    df = pd.read_excel(r'C:\WorkSpace\Datafeeds\files\DataFeeds\SEB Main Sept 2023.xls')
 
     df['PolicyNumber'] = df['Policy Number']
     df['HoldingName'] = df['Asset Name']
@@ -1648,8 +2289,8 @@ def seb(request):
             provider_id = 'a4v3H000000D22B',
             product = None,
             policy_number = row['PolicyNumber'],
-            valuation_date = None,
-            policy_currency = None,
+            valuation_date = convert_date_format(index,'valuation',row['ValuationDate']),
+            policy_currency = row['PolicyCurrency'],
             policy_start_date = None,
             policy_end_date = None,
             sub_policies = None,
@@ -1779,7 +2420,7 @@ class FinancialAccount(View):
                         }
                         # Add more sections (HoldingsDetails, ContributionInformation) and fields as needed
                     }
-                    
+                    print(financial_account)
                     payload["FinancialAccounts"].append(financial_account)
 
                 response = requests.post(financial_account_url, headers=financial_account_headers, json=payload)
@@ -1790,7 +2431,7 @@ class FinancialAccount(View):
                 else:
                     print("Error:", response.text)
 
-            return HttpResponse("Data sent successfully!")
+            return HttpResponse(response)
         
         return HttpResponse("Authentication failed!")
 

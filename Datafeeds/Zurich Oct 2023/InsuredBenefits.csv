@@ -1,0 +1,939 @@
+"Run Number","Policy Number","Policy Reference","Client Number","Benefit Code","Benefit Description","Benefit Status Code","Benefit Status Description","Benefit Basis Code","Benefit Basis Description","Benefit Currency","Benefit Amount"
+453739,2180766,"A011528320","1000792443","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",8400.00
+453739,2180774,"A011528320","1000792443","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",7200.00
+453739,3027299,"","1000256311","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3027299,"","1000256311","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3032740,"","1000697803","010","Life Cover","A","In-Force","E","Exclusive","USD",400000.00
+453739,3032740,"","1000697803","020","Critical Illness","A","In-Force","E","Exclusive","USD",400000.00
+453739,3035594,"","1000488666","010","Life Cover","A","In-Force","E","Exclusive","USD",1000000.00
+453739,3035594,"","1000488666","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3048530,"","1000793450","010","Life Cover","A","In-Force","E","Exclusive","USD",1000000.00
+453739,3048530,"","1000793450","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3048530,"","1000793450","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",200000.00
+453739,3048530,"","1000793450","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",3257.46
+453739,3053601,"","1000439189","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3053601,"","1000439189","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3053601,"","1000439189","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3053601,"","1000439189","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",4345.92
+453739,3053862,"","1000590577","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3053862,"","1000590577","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3055599,"","1000915483","010","Life Cover","A","In-Force","E","Exclusive","USD",490000.00
+453739,3055599,"","1000915483","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3055768,"","1000906495","010","Life Cover","A","In-Force","E","Exclusive","GBP",175000.00
+453739,3055768,"","1000906496","010","Life Cover","A","In-Force","E","Exclusive","GBP",175000.00
+453739,3055768,"","1000906495","020","Critical Illness","A","In-Force","E","Exclusive","GBP",25000.00
+453739,3055768,"","1000906496","020","Critical Illness","A","In-Force","E","Exclusive","GBP",25000.00
+453739,3057435,"","1000749619","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3057435,"","1000749619","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3058148,"","1000915747","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3058148,"","1000915747","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3058148,"","1000915747","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3058148,"","1000915747","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",2567.52
+453739,3060155,"","1000802753","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3060155,"","1000802753","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3060155,"","1000802753","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3060450,"A025761149","1000510656","010","Life Cover","A","In-Force","E","Exclusive","AED",3000000.00
+453739,3062382,"","1000893352","010","Life Cover","A","In-Force","E","Exclusive","AED",6809960.00
+453739,3062382,"","1000893354","010","Life Cover","A","In-Force","E","Exclusive","AED",6809960.00
+453739,3062382,"","1000893352","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",6809960.00
+453739,3062382,"","1000893354","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",6809960.00
+453739,3062390,"","1000893352","010","Life Cover","A","In-Force","E","Exclusive","AED",2253246.00
+453739,3062390,"","1000893354","010","Life Cover","A","In-Force","E","Exclusive","AED",2253246.00
+453739,3062701,"","1000909236","010","Life Cover","A","In-Force","E","Exclusive","USD",608204.00
+453739,3062825,"","1000835033","010","Life Cover","A","In-Force","E","Exclusive","USD",177000.00
+453739,3062825,"","1000835033","020","Critical Illness","A","In-Force","E","Exclusive","USD",177000.00
+453739,3062825,"","1000835033","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",177000.00
+453739,3063763,"","1000741171","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3063763,"","1000741171","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",568.09
+453739,3066832,"","1000869729","010","Life Cover","A","In-Force","E","Exclusive","GBP",450000.00
+453739,3069838,"","1000739256","010","Life Cover","A","In-Force","E","Exclusive","USD",1000000.00
+453739,3069838,"","1000739256","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3069838,"","1000739256","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3069879,"","1000278086","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3069879,"","1000278086","020","Critical Illness","A","In-Force","E","Exclusive","USD",375000.00
+453739,3100717,"A011673803","1001106519","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3100717,"A011673803","1001106519","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3100717,"A011673803","1001106519","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",300000.00
+453739,3100717,"A011673803","1001106519","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",4625.16
+453739,3101495,"","1000920199","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3101495,"","1000920199","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3101657,"","1000726007","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3101657,"","1000726007","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3101657,"","1000726007","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",200000.00
+453739,3101878,"","1000920473","010","Life Cover","A","In-Force","E","Exclusive","GBP",200000.00
+453739,3101878,"","1000920473","020","Critical Illness","A","In-Force","E","Exclusive","GBP",100000.00
+453739,3103855,"","1001021206","010","Life Cover","A","In-Force","E","Exclusive","AED",674990.00
+453739,3103855,"","1001021206","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",674990.00
+453739,3103938,"","1000766247","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3103938,"","1000766247","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3103938,"","1000766247","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3104789,"","1001022246","010","Life Cover","A","In-Force","E","Exclusive","AED",1193164.00
+453739,3104789,"","1001022246","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",1193164.00
+453739,3105787,"","1001074413","010","Life Cover","A","In-Force","E","Exclusive","USD",150000.00
+453739,3105787,"","1001074413","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3105787,"","1001074413","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3105949,"","1001074415","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3105949,"","1001074415","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3105949,"","1001074415","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",200000.00
+453739,3106475,"","1001236704","010","Life Cover","A","In-Force","E","Exclusive","USD",1000000.00
+453739,3106475,"","1001236704","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3106611,"","1001176470","010","Life Cover","A","In-Force","E","Exclusive","USD",790191.00
+453739,3106611,"","1001176470","020","Critical Illness","A","In-Force","E","Exclusive","USD",408720.00
+453739,3106611,"","1001176470","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",408720.00
+453739,3106668,"","1001023889","010","Life Cover","A","In-Force","E","Exclusive","AED",2912748.00
+453739,3106668,"","1001023889","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",2912748.00
+453739,3106856,"","1000962221","010","Life Cover","A","In-Force","E","Exclusive","EUR",150000.00
+453739,3106856,"","1000962221","020","Critical Illness","A","In-Force","E","Exclusive","EUR",150000.00
+453739,3106856,"","1000962221","080","Permanent Total Disability","A","In-Force","E","Exclusive","EUR",150000.00
+453739,3108768,"","1001003847","010","Life Cover","A","In-Force","E","Exclusive","AED",1331866.00
+453739,3108768,"","1001003847","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",1331866.00
+453739,3110030,"","1001115388","010","Life Cover","A","In-Force","E","Exclusive","USD",400000.00
+453739,3112970,"","1001023889","010","Life Cover","A","In-Force","E","Exclusive","AED",2912748.00
+453739,3112970,"","1001023889","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",2912748.00
+453739,3113353,"","1000898420","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3113353,"","1000898420","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3113561,"","1000975781","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3113561,"","1000975781","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3113561,"","1000975781","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3114059,"","1000934109","010","Life Cover","A","In-Force","E","Exclusive","AED",2433105.00
+453739,3114059,"","1000938333","010","Life Cover","A","In-Force","E","Exclusive","AED",2433105.00
+453739,3114059,"","1000934109","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",2433105.00
+453739,3114059,"","1000938333","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",2433105.00
+453739,3115122,"","1000761434","010","Life Cover","A","In-Force","E","Exclusive","USD",110000.00
+453739,3115122,"","1000761434","020","Critical Illness","A","In-Force","E","Exclusive","USD",50000.00
+453739,3115227,"","1000975780","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3115227,"","1000975780","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3115227,"","1000975780","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3115631,"","1000931660","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3115631,"","1000931660","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3115631,"","1000931660","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",1153.56
+453739,3116620,"","1000891223","010","Life Cover","A","In-Force","E","Exclusive","GBP",100000.00
+453739,3116620,"","1000891223","020","Critical Illness","E","Expired","E","Exclusive","GBP",0.00
+453739,3116620,"","1000891223","080","Permanent Total Disability","A","In-Force","E","Exclusive","GBP",100000.00
+453739,3117015,"","1001030310","010","Life Cover","A","In-Force","E","Exclusive","AED",1569041.00
+453739,3117015,"","1001030310","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",1569041.00
+453739,3119301,"","1000934374","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3119301,"","1000934374","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3119301,"","1000934374","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3119351,"","1000934933","010","Life Cover","A","In-Force","E","Exclusive","USD",550000.00
+453739,3119351,"","1000934935","010","Life Cover","A","In-Force","E","Exclusive","USD",550000.00
+453739,3119351,"","1000934933","020","Critical Illness","A","In-Force","E","Exclusive","USD",550000.00
+453739,3119351,"","1000934935","020","Critical Illness","A","In-Force","E","Exclusive","USD",550000.00
+453739,3120214,"DWMHZ9OB","1001244773","010","Life Cover","A","In-Force","E","Exclusive","USD",810000.00
+453739,3121348,"","1000936745","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3121470,"","1000936930","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3121470,"","1000936930","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3122022,"KDEU7NM8","1001245965","010","Life Cover","A","In-Force","E","Exclusive","USD",1000000.00
+453739,3122022,"KDEU7NM8","1001245965","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3123245,"","1001124242","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3123245,"","1001124242","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",1299.24
+453739,3123335,"","1000689107","010","Life Cover","A","In-Force","E","Exclusive","GBP",1000000.00
+453739,3123335,"","1000689107","020","Critical Illness","A","In-Force","E","Exclusive","GBP",250000.00
+453739,3123592,"238CXOXP","1001246854","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3123592,"238CXOXP","1001246854","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3123592,"238CXOXP","1001246854","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3123821,"","1000938823","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3123821,"","1000938823","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3123928,"","1000938958","010","Life Cover","A","In-Force","E","Exclusive","USD",600000.00
+453739,3123928,"","1000938958","020","Critical Illness","A","In-Force","E","Exclusive","USD",600000.00
+453739,3123928,"","1000938958","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",600000.00
+453739,3123995,"","1000938959","010","Life Cover","A","In-Force","E","Exclusive","USD",200000.00
+453739,3123995,"","1000938959","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3124610,"1OS8DY92","1001247541","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3124610,"1OS8DY92","1001247541","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3125289,"","1000931667","010","Life Cover","A","In-Force","E","Exclusive","USD",400000.00
+453739,3125289,"","1000931667","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3126617,"","1000940591","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3126617,"","1000940591","020","Critical Illness","A","In-Force","E","Exclusive","USD",350000.00
+453739,3129768,"2LJP02RY","1001254185","010","Life Cover","A","In-Force","E","Exclusive","USD",200000.00
+453739,3129768,"2LJP02RY","1001254185","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3130896,"","1000893021","010","Life Cover","A","In-Force","E","Exclusive","USD",1500000.00
+453739,3130896,"","1000893021","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3130896,"","1000893021","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3130918,"","1000893022","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3130918,"","1000893022","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3131692,"GN41IQNQ","1001255597","010","Life Cover","A","In-Force","E","Exclusive","USD",600000.00
+453739,3131692,"GN41IQNQ","1001255598","010","Life Cover","A","In-Force","E","Exclusive","USD",600000.00
+453739,3131692,"GN41IQNQ","1001255597","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3131692,"GN41IQNQ","1001255598","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3133012,"","1001115401","010","Life Cover","A","In-Force","E","Exclusive","USD",300000.00
+453739,3139168,"","1001032632","010","Life Cover","A","In-Force","E","Exclusive","USD",600000.00
+453739,3139271,"","1000952167","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3139271,"","1000952167","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3143651,"","1000929048","010","Life Cover","A","In-Force","E","Exclusive","USD",531000.00
+453739,3143651,"","1000929048","020","Critical Illness","A","In-Force","E","Exclusive","USD",300000.00
+453739,3144308,"","1001157427","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3144308,"","1001157427","020","Critical Illness","A","In-Force","E","Exclusive","USD",500000.00
+453739,3144308,"","1001157427","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3147070,"","1000256311","010","Life Cover","A","In-Force","E","Exclusive","USD",1000000.00
+453739,3147070,"","1000256311","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3147853,"","1000621820","010","Life Cover","A","In-Force","E","Exclusive","USD",100000.00
+453739,3147853,"","1000621820","020","Critical Illness","A","In-Force","E","Exclusive","USD",50000.00
+453739,3147853,"","1000621820","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",50000.00
+453739,3147853,"","1000621820","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",975.12
+453739,3148789,"NZX7P0ZK","1001266218","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3148789,"NZX7P0ZK","1001266218","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3151030,"2LJ5B82D","1001268300","010","Life Cover","A","In-Force","E","Exclusive","GBP",200000.00
+453739,3151030,"2LJ5B82D","1001268301","010","Life Cover","A","In-Force","E","Exclusive","GBP",200000.00
+453739,3151264,"","1001054655","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3151264,"","1001054655","020","Critical Illness","A","In-Force","E","Exclusive","USD",350000.00
+453739,3151264,"","1001054655","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",350000.00
+453739,3151999,"","1000914413","010","Life Cover","A","In-Force","E","Exclusive","USD",625000.00
+453739,3151999,"","1000914413","020","Critical Illness","A","In-Force","E","Exclusive","USD",625000.00
+453739,3151999,"","1000914413","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",29483.88
+453739,3156184,"","1000879478","010","Life Cover","A","In-Force","E","Exclusive","USD",600000.00
+453739,3156184,"","1000879478","020","Critical Illness","A","In-Force","E","Exclusive","USD",350000.00
+453739,3156770,"","1000967895","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3156770,"","1000967895","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3157130,"","1000920476","010","Life Cover","A","In-Force","E","Exclusive","GBP",200000.00
+453739,3157130,"","1000920476","020","Critical Illness","A","In-Force","E","Exclusive","GBP",100000.00
+453739,3159275,"","1001206331","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3159275,"","1001206331","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3160182,"","1001070983","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3160182,"","1001070983","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3160182,"","1001070983","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3160786,"","1001070984","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3160786,"","1001070984","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3160786,"","1001070984","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,3161245,"M98RFZ7N","1001207156","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3161245,"M98RFZ7N","1001207156","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3161404,"","1000947916","010","Life Cover","A","In-Force","E","Exclusive","USD",400000.00
+453739,3162004,"CZNQTIX8","1001207544","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3162004,"CZNQTIX8","1001207544","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3163474,"","1000973643","010","Life Cover","A","In-Force","E","Exclusive","USD",351715.00
+453739,3163583,"","1001109146","010","Life Cover","A","In-Force","E","Exclusive","GBP",240000.00
+453739,3163583,"","1001109147","010","Life Cover","A","In-Force","E","Exclusive","GBP",240000.00
+453739,3164423,"","1001208963","010","Life Cover","A","In-Force","E","Exclusive","USD",400000.00
+453739,3164423,"","1001208963","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3164423,"","1001208963","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",400000.00
+453739,3167121,"","1001151851","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3167121,"","1001151851","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3167130,"","1000963597","010","Life Cover","A","In-Force","E","Exclusive","USD",725000.00
+453739,3169263,"","1001211310","240","Funeral Coverage","A","In-Force","E","Exclusive","USD",5000.00
+453739,3169263,"","1001211310","246","Child's Critical Illness","A","In-Force","E","Exclusive","USD",15000.00
+453739,3169263,"","1001211310","247","Comprehensive Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3173861,"","1000983033","010","Life Cover","A","In-Force","E","Exclusive","USD",350000.00
+453739,3173861,"","1000983033","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3175857,"","1001015415","010","Life Cover","A","In-Force","E","Exclusive","USD",571000.00
+453739,3175857,"","1001015415","020","Critical Illness","A","In-Force","E","Exclusive","USD",310000.00
+453739,3175857,"","1001015415","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",571000.00
+453739,3175981,"","1000613673","010","Life Cover","A","In-Force","E","Exclusive","USD",571000.00
+453739,3175981,"","1000613673","020","Critical Illness","A","In-Force","E","Exclusive","USD",310000.00
+453739,3175981,"","1000613673","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",571000.00
+453739,3176349,"","1001158125","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3176349,"","1001158125","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3176349,"","1001158125","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3179249,"","1000987992","010","Life Cover","A","In-Force","E","Exclusive","EUR",1000000.00
+453739,3180212,"","1000835986","010","Life Cover","A","In-Force","E","Exclusive","USD",300000.00
+453739,3182313,"","1001091041","010","Life Cover","A","In-Force","E","Exclusive","USD",380000.00
+453739,3182313,"","1001091041","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3182323,"","1001161832","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3182323,"","1001161832","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3183240,"","1000229658","010","Life Cover","A","In-Force","E","Exclusive","AED",5450000.00
+453739,3183240,"","1000229658","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",5450000.00
+453739,3183647,"","1001046556","010","Life Cover","A","In-Force","E","Exclusive","USD",650000.00
+453739,3183647,"","1001046556","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3183753,"","1001162654","010","Life Cover","A","In-Force","E","Exclusive","USD",300000.00
+453739,3183753,"","1001162654","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3183753,"","1001162654","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",150000.00
+453739,3183787,"","1001162653","010","Life Cover","A","In-Force","E","Exclusive","USD",150000.00
+453739,3183787,"","1001162653","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3183787,"","1001162653","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",150000.00
+453739,3185615,"","1001102935","010","Life Cover","A","In-Force","E","Exclusive","EUR",250000.00
+453739,3185615,"","1001102935","020","Critical Illness","A","In-Force","E","Exclusive","EUR",37500.00
+453739,3185615,"","1001102935","080","Permanent Total Disability","A","In-Force","E","Exclusive","EUR",150000.00
+453739,3186010,"","1001164007","010","Life Cover","A","In-Force","E","Exclusive","USD",500000.00
+453739,3186010,"","1001164007","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3186231,"","1001164019","010","Life Cover","A","In-Force","E","Exclusive","AED",500000.00
+453739,3186231,"","1001164019","020","Critical Illness","A","In-Force","E","Exclusive","AED",500000.00
+453739,3186231,"","1001164019","080","Permanent Total Disability","A","In-Force","E","Exclusive","AED",500000.00
+453739,3186231,"","1001164019","090","Waiver of Premium","A","In-Force","E","Exclusive","AED",1906.20
+453739,3186255,"","1001164052","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3186255,"","1001164052","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3186255,"","1001164052","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3186272,"","1001164028","010","Life Cover","A","In-Force","E","Exclusive","GBP",500000.00
+453739,3186272,"","1001164028","020","Critical Illness","A","In-Force","E","Exclusive","GBP",300000.00
+453739,3186320,"","1001164030","010","Life Cover","A","In-Force","E","Exclusive","GBP",950000.00
+453739,3186320,"","1001164030","020","Critical Illness","A","In-Force","E","Exclusive","GBP",450000.00
+453739,3186328,"","1001164057","010","Life Cover","A","In-Force","E","Exclusive","USD",100000.00
+453739,3186328,"","1001164057","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3186328,"","1001164057","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3187023,"","1000754035","010","Life Cover","A","In-Force","E","Exclusive","USD",150000.00
+453739,3187023,"","1000754035","020","Critical Illness","A","In-Force","E","Exclusive","USD",150000.00
+453739,3187023,"","1000754035","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",150000.00
+453739,3187073,"","1001164252","010","Life Cover","A","In-Force","E","Exclusive","USD",400000.00
+453739,3187073,"","1001164252","020","Critical Illness","A","In-Force","E","Exclusive","USD",200000.00
+453739,3187073,"","1001164252","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",200000.00
+453739,3187270,"","1001164341","010","Life Cover","A","In-Force","E","Exclusive","USD",100000.00
+453739,3187270,"","1001164341","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3187270,"","1001164341","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3188313,"","1001165174","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3188313,"","1001165174","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3189247,"","1001224878","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3189247,"","1001224878","020","Critical Illness","A","In-Force","E","Exclusive","USD",300000.00
+453739,3189255,"","1001224877","010","Life Cover","A","In-Force","E","Exclusive","USD",750000.00
+453739,3189255,"","1001224877","020","Critical Illness","A","In-Force","E","Exclusive","USD",300000.00
+453739,3191004,"","1001225763","010","Life Cover","A","In-Force","E","Exclusive","USD",200000.00
+453739,3191004,"","1001225763","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3191004,"","1001225763","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3191013,"","1001225764","010","Life Cover","A","In-Force","E","Exclusive","USD",200000.00
+453739,3191013,"","1001225764","020","Critical Illness","A","In-Force","E","Exclusive","USD",100000.00
+453739,3191013,"","1001225764","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,3191372,"","1000741171","010","Life Cover","A","In-Force","","Blank","AED",790000.00
+453739,3195769,"","1001170141","010","Life Cover","A","In-Force","E","Exclusive","USD",250000.00
+453739,3195769,"","1001170141","020","Critical Illness","A","In-Force","E","Exclusive","USD",250000.00
+453739,3195769,"","1001170141","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,3195858,"","1001014566","010","Life Cover","A","In-Force","E","Exclusive","GBP",500000.00
+453739,3195858,"","1001014566","020","Critical Illness","A","In-Force","E","Exclusive","GBP",300000.00
+453739,3195858,"","1001014566","080","Permanent Total Disability","A","In-Force","E","Exclusive","GBP",300000.00
+453739,3197778,"","1001014566","010","Life Cover","A","In-Force","E","Exclusive","GBP",300000.00
+453739,3197778,"","1001014566","020","Critical Illness","A","In-Force","E","Exclusive","GBP",200000.00
+453739,5234752,"GBE154/07","1000439188","010","Life Cover","E","Expired","I","Inclusive","USD",0.00
+453739,5234752,"GBE154/07","1000439189","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,5234752,"GBE154/07","1000439189","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,5234752,"GBE154/07","1000439188","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5234752,"GBE154/07","1000439189","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5235198,"PIC198/07","1000440528","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5239339,"PIC250/07","1000454024","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5252873,"V30081","1000278086","010","Life Cover","E","Expired","E","Exclusive","USD",0.00
+453739,5252873,"V30081","1000278086","070","Dismemberment","E","Expired","E","Exclusive","USD",0.00
+453739,5252873,"V30081","1000278086","080","Permanent Total Disability","E","Expired","E","Exclusive","USD",0.00
+453739,5252873,"V30081","1000278086","090","Waiver of Premium","E","Expired","E","Exclusive","USD",0.00
+453739,5255602,"PIC307/08","1000510656","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5256268,"","1000513169","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,5259712,"PIC398/08","1000523057","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,5259712,"PIC398/08","1000523058","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,5263604,"","1000531850","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5263604,"","1000531853","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5267197,"PIC570/09","1000540182","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,5312230,"SEF12320","1000229170","010","Life Cover","A","In-Force","I","Inclusive","USD",113126.00
+453739,5312230,"SEF12320","1000229170","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",12000.00
+453739,5312230,"SEF12320","1000229170","110","Aeroplane Cover","E","Expired","I","Inclusive","USD",0.00
+453739,5710473,"","1000446557","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,5710473,"","1000447354","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,5710473,"","1000446557","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,5710473,"","1000447354","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,5710473,"","1000446557","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,5710473,"","1000447354","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,5714946,"GIB19/07","1000430400","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,5714946,"GIB19/07","1000430400","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,5714946,"GIB19/07","1000430400","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,5716158,"ACM60/07","1000433792","010","Life Cover","A","In-Force","I","Inclusive","USD",3000000.00
+453739,5716158,"ACM60/07","1000433792","020","Critical Illness","A","In-Force","I","Inclusive","USD",600000.00
+453739,5716158,"ACM60/07","1000433792","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",43944.00
+453739,5716158,"ACM60/07","1000433792","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",2000000.00
+453739,5720632,"F17992","1000311191","010","Life Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,5720632,"F17992","1000311192","010","Life Cover","A","In-Force","I","Inclusive","USD",30000.00
+453739,5720632,"F17992","1000311191","020","Critical Illness","A","In-Force","I","Inclusive","USD",120000.00
+453739,5720632,"F17992","1000311192","020","Critical Illness","A","In-Force","I","Inclusive","USD",30000.00
+453739,5720632,"F17992","1000311191","050","Hospitalisation","A","In-Force","E","Exclusive","USD",770.00
+453739,5720632,"F17992","1000311191","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",2400.00
+453739,5720632,"F17992","1000311191","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,5720632,"F17992","1000311192","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",30000.00
+453739,5724047,"8901635","1000512167","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,5724047,"8901635","1000512167","020","Critical Illness","A","In-Force","I","Inclusive","USD",500000.00
+453739,5724047,"8901635","1000512167","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",500000.00
+453739,5724047,"8901635","1000512167","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",7848.00
+453739,5724047,"8901635","1000512167","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6201993,"","1000730298","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6201993,"","1000730298","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6201993,"","1000730298","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6202553,"","1000893955","010","Life Cover","A","In-Force","I","Inclusive","USD",237000.00
+453739,6202553,"","1000893955","020","Critical Illness","A","In-Force","I","Inclusive","USD",237000.00
+453739,6202553,"","1000893955","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",237000.00
+453739,6202685,"","1000893954","010","Life Cover","A","In-Force","I","Inclusive","USD",177000.00
+453739,6202685,"","1000893954","020","Critical Illness","A","In-Force","I","Inclusive","USD",177000.00
+453739,6202685,"","1000893954","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",177000.00
+453739,6203044,"A020464186","1000470224","010","Life Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6203044,"A020464186","1000470224","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6203044,"A020464186","1000470224","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6203304,"","1001168536","010","Life Cover","A","In-Force","I","Inclusive","USD",175000.00
+453739,6203304,"","1001168536","020","Critical Illness","A","In-Force","I","Inclusive","USD",175000.00
+453739,6203304,"","1001168536","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",175000.00
+453739,6203304,"","1001168536","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",175000.00
+453739,6203674,"","1000983032","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6203674,"","1000983032","021","Cancer Cover","A","In-Force","I","Inclusive","USD",150000.00
+453739,6203674,"","1000983032","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6203748,"","1001100246","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203748,"","1001100246","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203748,"","1001100246","040","Accidental Death","A","In-Force","E","Exclusive","USD",250000.00
+453739,6203748,"","1001100246","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,6203748,"","1001100246","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203784,"","1000975780","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203784,"","1000975781","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203784,"","1000975780","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203784,"","1000975781","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203784,"","1000975780","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,6203784,"","1000975781","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,6203784,"","1000975780","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6203784,"","1000975781","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6205181,"","1000713553","010","Life Cover","A","In-Force","I","Inclusive","USD",400000.00
+453739,6205181,"","1000713553","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6205181,"","1000713553","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",400000.00
+453739,6206871,"","1000729250","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6206871,"","1000729250","020","Critical Illness","A","In-Force","I","Inclusive","USD",350000.00
+453739,6206871,"","1000729250","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",5292.00
+453739,6206871,"","1000729250","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6207313,"","1001172017","010","Life Cover","A","In-Force","I","Inclusive","GBP",200000.00
+453739,6207313,"","1001172017","020","Critical Illness","A","In-Force","I","Inclusive","GBP",200000.00
+453739,6207313,"","1001172017","110","Aeroplane Cover","A","In-Force","I","Inclusive","GBP",200000.00
+453739,6207376,"","1000923275","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6207376,"","1000923275","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6207376,"","1000923275","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6207670,"","1000923349","010","Life Cover","A","In-Force","I","Inclusive","USD",700000.00
+453739,6207670,"","1000923351","010","Life Cover","A","In-Force","I","Inclusive","USD",700000.00
+453739,6207670,"","1000923349","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",700000.00
+453739,6207670,"","1000923351","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",700000.00
+453739,6208135,"","1000759169","010","Life Cover","A","In-Force","I","Inclusive","GBP",100001.00
+453739,6208135,"","1000759169","020","Critical Illness","A","In-Force","I","Inclusive","GBP",100000.00
+453739,6208135,"","1000759169","030","Family Income","A","In-Force","E","Exclusive","GBP",100000.00
+453739,6208135,"","1000759169","080","Permanent Total Disability","A","In-Force","E","Exclusive","GBP",100000.00
+453739,6208135,"","1000759169","110","Aeroplane Cover","A","In-Force","I","Inclusive","GBP",100001.00
+453739,6211944,"","1000628172","010","Life Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6211944,"","1000628172","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6212984,"","1001054210","010","Life Cover","A","In-Force","I","Inclusive","USD",1750000.00
+453739,6212984,"","1001054210","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6212984,"","1001054210","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",1750000.00
+453739,6212984,"","1001054210","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6213198,"","1000916656","010","Life Cover","A","In-Force","I","Inclusive","USD",332000.00
+453739,6213198,"","1000916656","020","Critical Illness","A","In-Force","I","Inclusive","USD",332000.00
+453739,6213198,"","1000916656","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",332000.00
+453739,6215123,"","1000928985","010","Life Cover","A","In-Force","I","Inclusive","USD",175327.00
+453739,6215123,"","1000928986","010","Life Cover","A","In-Force","I","Inclusive","USD",175327.00
+453739,6215123,"","1000928985","020","Critical Illness","A","In-Force","I","Inclusive","USD",175327.00
+453739,6215123,"","1000928986","020","Critical Illness","A","In-Force","I","Inclusive","USD",175327.00
+453739,6215123,"","1000928985","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",175327.00
+453739,6215123,"","1000928986","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",175327.00
+453739,6217031,"","1001056546","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6217031,"","1001056546","020","Critical Illness","A","In-Force","I","Inclusive","USD",150000.00
+453739,6217031,"","1001056546","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6217758,"","1001181683","010","Life Cover","A","In-Force","I","Inclusive","AED",1000000.00
+453739,6217758,"","1001181683","020","Critical Illness","A","In-Force","I","Inclusive","AED",1000000.00
+453739,6217758,"","1001181683","110","Aeroplane Cover","A","In-Force","I","Inclusive","AED",1000000.00
+453739,6217920,"","1001181684","010","Life Cover","A","In-Force","I","Inclusive","AED",1000000.00
+453739,6217920,"","1001181684","020","Critical Illness","A","In-Force","I","Inclusive","AED",1000000.00
+453739,6217920,"","1001181684","110","Aeroplane Cover","A","In-Force","I","Inclusive","AED",1000000.00
+453739,6218913,"CIB332-009","1000989001","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6218913,"CIB332-009","1000989001","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6218913,"CIB332-009","1000989001","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",5916.00
+453739,6218913,"CIB332-009","1000989001","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6219358,"DVA1385916","1000931153","010","Life Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6219358,"DVA1385916","1000931153","030","Family Income","A","In-Force","E","Exclusive","USD",40000.00
+453739,6219358,"DVA1385916","1000931153","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6219475,"","1001103583","010","Life Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6219475,"","1001103583","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6219475,"","1001103583","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,6219475,"","1001103583","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6219528,"N257203","1000931226","010","Life Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6219528,"N257203","1000931227","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6219528,"N257203","1000931226","020","Critical Illness","A","In-Force","I","Inclusive","USD",300000.00
+453739,6219528,"N257203","1000931227","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6219528,"N257203","1000931226","030","Family Income","A","In-Force","E","Exclusive","USD",36000.00
+453739,6219528,"N257203","1000931226","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6219528,"N257203","1000931227","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6220284,"","1000858963","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6220284,"","1000858963","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6220284,"","1000858963","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6220879,"","1000785591","010","Life Cover","A","In-Force","I","Inclusive","USD",151000.00
+453739,6220879,"","1000785591","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",151000.00
+453739,6224386,"","1000934230","010","Life Cover","A","In-Force","I","Inclusive","USD",609000.00
+453739,6224386,"","1000934230","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",609000.00
+453739,6225995,"","1000974102","010","Life Cover","A","In-Force","I","Inclusive","USD",750000.00
+453739,6225995,"","1000974102","020","Critical Illness","A","In-Force","I","Inclusive","USD",300000.00
+453739,6225995,"","1000974102","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,6225995,"","1000974102","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",750000.00
+453739,6236343,"","1000741171","010","Life Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6236343,"","1000741172","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6236343,"","1000741171","020","Critical Illness","A","In-Force","I","Inclusive","USD",300000.00
+453739,6236343,"","1000741172","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6236343,"","1000741171","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",150000.00
+453739,6236343,"","1000741171","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",5712.00
+453739,6236343,"","1000741171","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6236343,"","1000741172","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6236724,"","1000941879","010","Life Cover","A","In-Force","I","Inclusive","USD",320000.00
+453739,6236724,"","1000941879","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",320000.00
+453739,6238478,"","1000986644","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6238478,"","1000986644","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6238478,"","1000986644","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6239812,"DVA13977/1","1000943564","010","Life Cover","A","In-Force","I","Inclusive","USD",150000.00
+453739,6239812,"DVA13977/1","1000943564","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",150000.00
+453739,6242394,"","1000572913","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6242394,"","1000572913","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6242394,"","1000572913","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6244576,"","1001124675","010","Life Cover","A","In-Force","I","Inclusive","USD",750000.00
+453739,6244576,"","1001124675","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6244576,"","1001124675","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",750000.00
+453739,6244582,"","1000909561","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6244582,"","1000909561","020","Critical Illness","A","In-Force","I","Inclusive","USD",75000.00
+453739,6244582,"","1000909561","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",2364.00
+453739,6244582,"","1000909561","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6246801,"","1000947507","010","Life Cover","A","In-Force","I","Inclusive","USD",252600.00
+453739,6246801,"","1000947507","020","Critical Illness","A","In-Force","I","Inclusive","USD",150000.00
+453739,6246801,"","1000947507","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",252600.00
+453739,6247637,"","1000947794","010","Life Cover","A","In-Force","I","Inclusive","USD",150000.00
+453739,6247637,"","1000947794","020","Critical Illness","E","Expired","I","Inclusive","USD",0.00
+453739,6247637,"","1000947794","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",150000.00
+453739,6248374,"","1000948370","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6248374,"","1000948370","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6248537,"N271527","1000613673","010","Life Cover","A","In-Force","I","Inclusive","USD",571000.00
+453739,6248537,"N271527","1001015415","010","Life Cover","A","In-Force","I","Inclusive","USD",571000.00
+453739,6248537,"N271527","1000613673","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",571000.00
+453739,6248537,"N271527","1001015415","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",571000.00
+453739,6248537,"N271527","1001015415","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",3816.00
+453739,6248537,"N271527","1000613673","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6248537,"N271527","1001015415","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6248971,"A041073818","1000679507","010","Life Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6248971,"A041073818","1000679507","020","Critical Illness","A","In-Force","I","Inclusive","USD",200000.00
+453739,6248971,"A041073818","1000679507","030","Family Income","A","In-Force","E","Exclusive","USD",120000.00
+453739,6248971,"A041073818","1000679507","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",200000.00
+453739,6248971,"A041073818","1000679507","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6249968,"","1001073381","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6249968,"","1001073382","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6249968,"","1001073381","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6249968,"","1001073382","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6249968,"","1001073381","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6249968,"","1001073382","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6251653,"","1000923277","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6251653,"","1000923277","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6253484,"","1001019801","010","Life Cover","A","In-Force","I","Inclusive","USD",175000.00
+453739,6253484,"","1001019801","020","Critical Illness","A","In-Force","I","Inclusive","USD",50000.00
+453739,6253484,"","1001019801","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",175000.00
+453739,6255256,"","1000893912","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6255256,"","1000893912","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6255256,"","1000893912","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6259326,"","1000897292","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6259326,"","1000897292","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6259326,"","1000897292","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",150000.00
+453739,6259326,"","1000897292","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6261622,"","1000957903","010","Life Cover","A","In-Force","I","Inclusive","USD",229500.00
+453739,6261622,"","1000957903","020","Critical Illness","A","In-Force","I","Inclusive","USD",229500.00
+453739,6261622,"","1000957903","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",229500.00
+453739,6261825,"","1000897390","010","Life Cover","A","In-Force","I","Inclusive","USD",207000.00
+453739,6261825,"","1000897390","020","Critical Illness","A","In-Force","I","Inclusive","USD",207000.00
+453739,6261825,"","1000897390","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",207000.00
+453739,6261914,"","1000897371","010","Life Cover","A","In-Force","I","Inclusive","USD",173000.00
+453739,6261914,"","1000897371","020","Critical Illness","A","In-Force","I","Inclusive","USD",173000.00
+453739,6261914,"","1000897371","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",173000.00
+453739,6264494,"","1001026131","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6264494,"","1001026131","020","Critical Illness","A","In-Force","I","Inclusive","USD",275000.00
+453739,6264494,"","1001026131","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6265121,"","1000959868","010","Life Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6265121,"","1000959868","020","Critical Illness","A","In-Force","I","Inclusive","USD",750000.00
+453739,6265121,"","1000959868","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",750000.00
+453739,6265121,"","1000959868","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6265295,"","1000916658","010","Life Cover","A","In-Force","I","Inclusive","USD",583500.00
+453739,6265295,"","1000916658","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",583500.00
+453739,6266156,"","1000967087","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6266156,"","1000967087","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",50000.00
+453739,6266156,"","1000967087","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6267582,"DVA14151/7","1000921550","010","Life Cover","A","In-Force","I","Inclusive","GBP",230126.29
+453739,6267582,"DVA14151/7","1000921551","010","Life Cover","A","In-Force","I","Inclusive","GBP",230126.29
+453739,6267582,"DVA14151/7","1000921551","020","Critical Illness","A","In-Force","I","Inclusive","GBP",153417.53
+453739,6267582,"DVA14151/7","1000921550","080","Permanent Total Disability","A","In-Force","E","Exclusive","GBP",153417.53
+453739,6267582,"DVA14151/7","1000921550","110","Aeroplane Cover","A","In-Force","I","Inclusive","GBP",230126.29
+453739,6267582,"DVA14151/7","1000921551","110","Aeroplane Cover","A","In-Force","I","Inclusive","GBP",230126.29
+453739,6267700,"","1000901581","010","Life Cover","A","In-Force","I","Inclusive","USD",159000.00
+453739,6267700,"","1000901581","020","Critical Illness","A","In-Force","I","Inclusive","USD",159000.00
+453739,6267700,"","1000901581","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",159000.00
+453739,6268773,"","1000822515","010","Life Cover","A","In-Force","I","Inclusive","USD",80000.00
+453739,6268773,"","1000822515","020","Critical Illness","A","In-Force","I","Inclusive","USD",80000.00
+453739,6268773,"","1000822515","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",80000.00
+453739,6269109,"","1000902341","010","Life Cover","A","In-Force","I","Inclusive","USD",50500.00
+453739,6269109,"","1000902341","020","Critical Illness","A","In-Force","I","Inclusive","USD",50500.00
+453739,6269109,"","1000902341","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",50500.00
+453739,6270243,"","1001109491","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6270243,"","1001109491","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6270243,"","1001109491","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",2400.00
+453739,6270243,"","1001109491","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6270518,"","1001143713","010","Life Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6270518,"","1001143714","010","Life Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6270518,"","1001143713","020","Critical Illness","A","In-Force","I","Inclusive","USD",200000.00
+453739,6270518,"","1001143714","020","Critical Illness","A","In-Force","I","Inclusive","USD",200000.00
+453739,6270518,"","1001143713","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6270518,"","1001143714","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6274636,"","1001074415","010","Life Cover","A","In-Force","I","Inclusive","USD",750000.00
+453739,6274636,"","1001074415","020","Critical Illness","A","In-Force","I","Inclusive","USD",200000.00
+453739,6274636,"","1001074415","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",750000.00
+453739,6274636,"","1001074415","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",750000.00
+453739,6276946,"","1000825677","010","Life Cover","A","In-Force","I","Inclusive","USD",431500.00
+453739,6276946,"","1000825677","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",431500.00
+453739,6278207,"","1000683842","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6278207,"","1001034624","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6278207,"","1000683842","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6278207,"","1001034624","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6278207,"","1000683842","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6278207,"","1001034624","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6278389,"","1000967192","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6278389,"","1000967192","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6279848,"","1000907924","010","Life Cover","A","In-Force","I","Inclusive","USD",134500.00
+453739,6279848,"","1000907924","020","Critical Illness","A","In-Force","I","Inclusive","USD",134500.00
+453739,6279848,"","1000907924","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",134500.00
+453739,6279872,"","1000908049","010","Life Cover","A","In-Force","I","Inclusive","USD",138000.00
+453739,6279872,"","1000908049","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",138000.00
+453739,6281648,"N253157","1000908804","010","Life Cover","A","In-Force","I","Inclusive","USD",190000.00
+453739,6281648,"N253157","1000908804","020","Critical Illness","A","In-Force","I","Inclusive","USD",150000.00
+453739,6281648,"N253157","1000908804","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",190000.00
+453739,6282122,"","1000969002","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6282122,"","1000969002","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6282122,"","1000969002","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,6282122,"","1000969002","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6282369,"","1000510656","010","Life Cover","A","In-Force","I","Inclusive","USD",176000.00
+453739,6282369,"","1000510656","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",176000.00
+453739,6283390,"","1000909632","010","Life Cover","A","In-Force","I","Inclusive","USD",400000.00
+453739,6283390,"","1000909632","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6283390,"","1000909632","050","Hospitalisation","A","In-Force","E","Exclusive","USD",500.00
+453739,6283390,"","1000909632","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,6283390,"","1000909632","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",6784.20
+453739,6283390,"","1000909632","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",400000.00
+453739,6290419,"","1000973488","010","Life Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6290419,"","1000973488","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6290419,"","1000973488","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",150000.00
+453739,6290419,"","1000973488","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6291549,"","1001093522","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6291549,"","1001093522","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6291638,"","1001093524","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6291638,"","1001093524","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6296432,"DVA13855","1000917933","010","Life Cover","A","In-Force","I","Inclusive","USD",148000.00
+453739,6296432,"DVA13855","1000917933","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",148000.00
+453739,6297148,"","1000963079","010","Life Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6297148,"","1000963079","020","Critical Illness","A","In-Force","I","Inclusive","USD",200000.00
+453739,6297148,"","1000963079","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6299653,"A030268924","1000978641","010","Life Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6299653,"A030268924","1000978641","020","Critical Illness","A","In-Force","I","Inclusive","USD",300000.00
+453739,6299653,"A030268924","1000978641","030","Family Income","A","In-Force","E","Exclusive","USD",100000.00
+453739,6299653,"A030268924","1000978641","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6304749,"MON07/374","1000637146","010","Life Cover","A","In-Force","I","Inclusive","GBP",250000.00
+453739,6304749,"MON07/374","1000637146","020","Critical Illness","A","In-Force","I","Inclusive","GBP",100000.00
+453739,6304749,"MON07/374","1000637146","110","Aeroplane Cover","A","In-Force","I","Inclusive","GBP",250000.00
+453739,6306585,"N237137","1000440528","010","Life Cover","A","In-Force","I","Inclusive","USD",412743.00
+453739,6306585,"N237137","1000440528","020","Critical Illness","A","In-Force","I","Inclusive","USD",412743.00
+453739,6306585,"N237137","1000440528","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",412743.00
+453739,6308574,"CIB388/08","1000553163","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6308574,"CIB388/08","1000570003","010","Life Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6308574,"CIB388/08","1000553163","020","Critical Illness","A","In-Force","I","Inclusive","USD",50000.00
+453739,6308574,"CIB388/08","1000570003","020","Critical Illness","A","In-Force","I","Inclusive","USD",50000.00
+453739,6308574,"CIB388/08","1000553163","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6308574,"CIB388/08","1000570003","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",100000.00
+453739,6310030,"A016F9629","1000491889","010","Life Cover","A","In-Force","I","Inclusive","USD",160000.00
+453739,6310030,"A016F9629","1000491889","020","Critical Illness","A","In-Force","I","Inclusive","USD",160000.00
+453739,6310030,"A016F9629","1000491889","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",160000.00
+453739,6310030,"A016F9629","1000491889","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",160000.00
+453739,6311781,"ADCB14613","1000700602","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6311781,"ADCB14613","1000700602","020","Critical Illness","A","In-Force","I","Inclusive","USD",125000.00
+453739,6311781,"ADCB14613","1000700602","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6313227,"N229339","1000561802","010","Life Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6313227,"N229339","1000561802","020","Critical Illness","A","In-Force","I","Inclusive","USD",120000.00
+453739,6313227,"N229339","1000561802","030","Family Income","A","In-Force","E","Exclusive","USD",48000.00
+453739,6313227,"N229339","1000561802","070","Dismemberment","A","In-Force","E","Exclusive","USD",120000.00
+453739,6313227,"N229339","1000561802","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",200000.00
+453739,6314437,"PIB739/13","1000761434","010","Life Cover","A","In-Force","I","Inclusive","USD",110000.00
+453739,6314437,"PIB739/13","1000761434","020","Critical Illness","A","In-Force","I","Inclusive","USD",50000.00
+453739,6314437,"PIB739/13","1000761434","090","Waiver of Premium","E","Expired","E","Exclusive","USD",0.00
+453739,6314437,"PIB739/13","1000761434","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",110000.00
+453739,6320600,"","1000580568","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6320600,"","1000580568","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6320600,"","1000580568","070","Dismemberment","A","In-Force","E","Exclusive","USD",250000.00
+453739,6320600,"","1000580568","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",350000.00
+453739,6320600,"","1000580568","090","Waiver of Premium","E","Expired","E","Exclusive","USD",0.00
+453739,6320600,"","1000580568","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6322475,"N240204","1000788275","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6322475,"N240204","1000788275","020","Critical Illness","A","In-Force","I","Inclusive","USD",200000.00
+453739,6322475,"N240204","1000788275","050","Hospitalisation","A","In-Force","E","Exclusive","USD",500.00
+453739,6322475,"N240204","1000788275","070","Dismemberment","A","In-Force","E","Exclusive","USD",100000.00
+453739,6322475,"N240204","1000788275","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,6322475,"N240204","1000788275","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",6480.00
+453739,6322475,"N240204","1000788275","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6326133,"MON07/373","1000637143","010","Life Cover","A","In-Force","I","Inclusive","GBP",180000.00
+453739,6326133,"MON07/373","1000637143","020","Critical Illness","A","In-Force","I","Inclusive","GBP",100000.00
+453739,6326133,"MON07/373","1000637143","110","Aeroplane Cover","A","In-Force","I","Inclusive","GBP",180000.00
+453739,6340176,"","1000661956","010","Life Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6340176,"","1000661956","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6340176,"","1000661956","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",1000000.00
+453739,6342933,"N200095","1000531801","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6342933,"N200095","1000531802","010","Life Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6342933,"N200095","1000531801","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6342933,"N200095","1000531802","020","Critical Illness","A","In-Force","I","Inclusive","USD",100000.00
+453739,6342933,"N200095","1000531801","070","Dismemberment","A","In-Force","E","Exclusive","USD",100000.00
+453739,6342933,"N200095","1000531802","070","Dismemberment","A","In-Force","E","Exclusive","USD",100000.00
+453739,6342933,"N200095","1000531801","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,6342933,"N200095","1000531802","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",100000.00
+453739,6342933,"N200095","1000531801","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",4212.00
+453739,6342933,"N200095","1000531801","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6342933,"N200095","1000531802","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",350000.00
+453739,6360322,"N212220","1000613673","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6360322,"N212220","1001015415","010","Life Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6360322,"N212220","1000613673","020","Critical Illness","A","In-Force","I","Inclusive","USD",310000.00
+453739,6360322,"N212220","1001015415","020","Critical Illness","A","In-Force","I","Inclusive","USD",310000.00
+453739,6360322,"N212220","1000613673","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6360322,"N212220","1001015415","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",500000.00
+453739,6361806,"","1000614771","010","Life Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6361806,"","1000614771","020","Critical Illness","A","In-Force","I","Inclusive","USD",250000.00
+453739,6361806,"","1000614771","050","Hospitalisation","A","In-Force","E","Exclusive","USD",870.00
+453739,6361806,"","1000614771","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",250000.00
+453739,6361806,"","1000614771","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",250000.00
+453739,6370890,"","1000512168","010","Life Cover","A","In-Force","I","Inclusive","USD",400000.00
+453739,6370890,"","1000512168","020","Critical Illness","A","In-Force","I","Inclusive","USD",400000.00
+453739,6370890,"","1000512168","080","Permanent Total Disability","A","In-Force","E","Exclusive","USD",400000.00
+453739,6370890,"","1000512168","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",400000.00
+453739,6376630,"ADCB25050","1000855896","010","Life Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6376630,"ADCB25050","1000855896","020","Critical Illness","A","In-Force","I","Inclusive","USD",150000.00
+453739,6376630,"ADCB25050","1000855896","040","Accidental Death","A","In-Force","E","Exclusive","USD",150000.00
+453739,6376630,"ADCB25050","1000855896","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",300000.00
+453739,6379408,"ADCB23726","1000842119","010","Life Cover","A","In-Force","I","Inclusive","USD",30000.00
+453739,6379408,"ADCB23726","1000842119","020","Critical Illness","A","In-Force","I","Inclusive","USD",30000.00
+453739,6379408,"ADCB23726","1000842119","110","Aeroplane Cover","A","In-Force","I","Inclusive","USD",30000.00
+453739,8102333,"","1000580406","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8104798,"PIC1307414","1000811697","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8107128,"","1000911651","042","Free Accidental Death","E","Expired","I","Inclusive","GBP",0.00
+453739,8108224,"","1000912179","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8110005,"","1000858963","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8111427,"","1000913489","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8111726,"PIC-ZL468","1000750597","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8114135,"","1000913653","042","Free Accidental Death","E","Expired","I","Inclusive","EUR",0.00
+453739,8114942,"","1000952188","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8118359,"","1000914980","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8118359,"","1000914981","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8118549,"","1000987426","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8118600,"","1000987360","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8119885,"PICZL-1034","1000813951","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8120000,"PIC-ZL1033","1000814018","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8120653,"PIC-ZL-604","1000751968","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8121482,"","1000814131","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8121524,"","1000584598","042","Free Accidental Death","A","In-Force","I","Inclusive","GBP",32447.53
+453739,8121524,"","1000584599","042","Free Accidental Death","A","In-Force","I","Inclusive","GBP",32447.53
+453739,8124124,"","1000585085","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8125626,"","1000954243","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8125657,"","1000915799","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8125701,"","1000954314","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8126850,"","1000916006","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8127039,"","1000863284","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8127987,"","1000916656","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",21798.94
+453739,8128536,"","1000954599","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8129311,"","1000954756","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8129723,"PIC-ZL-617","1000754035","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8131121,"","1000586825","042","Free Accidental Death","A","In-Force","I","Inclusive","EUR",50000.00
+453739,8134244,"","1000462235","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8136613,"PIC128496","1000691962","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8141930,"DVA13784/1","1000917933","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8142226,"","1000918248","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8142366,"","1000918426","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8143227,"PIC1120/11","1000643957","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8145828,"","1000919944","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8145828,"","1000919945","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8146627,"PIC-ZL-476","1000757987","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8150069,"","1000974866","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8151136,"","1000921353","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8151965,"","1000759169","042","Free Accidental Death","A","In-Force","I","Inclusive","GBP",25000.00
+453739,8152228,"PIC-ZL-477","1000759221","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8153351,"","1000922039","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8154768,"MON07/379","1000646328","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8154768,"MON07/379","1000646329","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8156431,"","1000922292","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8157163,"PIC1157/11","1000646930","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8157338,"","1000922776","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8157347,"","1000922690","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8157365,"","1000832046","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8160517,"","1000923121","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8160517,"","1000923129","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8160526,"","1000923210","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8160905,"","1000923406","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8162617,"","1000924348","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8162733,"","1000924343","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8163761,"PIC-ZL-658","1000761413","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8164832,"","1000869071","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8165635,"","1000925280","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8165635,"","1000925281","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8170677,"","1000817038","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8171584,"","1000762482","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8174965,"","1000763339","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8174965,"","1000763339","090","Waiver of Premium","A","In-Force","E","Exclusive","USD",36000.00
+453739,8177214,"","1000819515","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8180788,"","1000819714","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8183996,"","1000562350","042","Free Accidental Death","E","Expired","I","Inclusive","GBP",0.00
+453739,8185418,"","1000652463","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8185418,"","1000652464","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8188485,"","1000705019","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8189782,"","1000653268","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8192128,"","1000975780","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8192504,"","1000872365","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8192504,"","1000872366","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8193376,"","1000872621","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8194669,"","1000975855","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8197322,"PIC13100/1","1000819804","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8201060,"PICZL1046","1000822162","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8201115,"PIC-ZL1045","1000822162","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8205813,"","1000394966","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8206095,"PIC-ZL1047","1000822523","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8209848,"PIC1248/11","1000656458","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8210467,"","1000875197","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8212292,"PIC13301/1","1000876095","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8215957,"","1000876582","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8216624,"PIC-ZL 239","1000712518","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8216756,"","1000712731","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8216756,"","1000712732","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8217699,"PIC-ZL-786","1000772491","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8218548,"","1000825172","042","Free Accidental Death","A","In-Force","I","Inclusive","GBP",25000.00
+453739,8218671,"PIC-ZL 792","1000772809","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8219526,"PIC12837","1000713553","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8228146,"PIC13352","1000879013","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8229083,"","1000659669","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8230898,"PIC128115","1000659966","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8230898,"PIC128115","1000659967","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8231748,"","1000776030","042","Free Accidental Death","E","Expired","I","Inclusive","EUR",0.00
+453739,8235489,"","1000978160","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8235489,"","1000978161","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8236489,"","1000661064","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8237559,"PIC-ZL-161","1000717367","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8239911,"","1000778158","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8245066,"PIC13358/1","1000882046","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8245968,"","1000663355","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8246089,"","1000882379","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8246365,"PIC1335715","1000882376","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8247541,"","1000882899","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8256893,"PIC1337115","1000884563","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8260234,"PIC ZL 944","1000781819","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8263082,"","1000833342","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8265475,"PIC13388/1","1000886382","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8265475,"PIC13388/1","1000886383","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8268237,"","1000928196","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8269587,"","1000928652","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8273300,"","1000929486","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8273426,"PIC13400","1000887712","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8273681,"","1000834618","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8274260,"PIC-Zl-183","1000696539","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8275299,"PIC-ZL182","1000723101","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8277235,"","1000835033","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8277359,"PIC13401","1000887954","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8281163,"","1000931343","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8281604,"","1000889115","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",24295.71
+453739,8283659,"PIC-ZL968","1000785591","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8288389,"","1000902341","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8288957,"","1000958217","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",1695.69
+453739,8292830,"","1000891250","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8293453,"PIC13151","1000838232","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8295798,"ADCB23512","1000838622","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8298695,"","1000959696","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8299087,"","1000934374","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8306306,"","1000790840","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8307301,"PIC1281771","1000665777","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8311517,"","1000960726","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8312085,"","1000937444","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8312085,"","1000937445","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8314025,"","1000842859","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8315661,"","1000775005","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8315661,"","1000775009","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8317017,"","1000937991","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8317368,"","1000843972","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8322327,"PIC-ZL335","1000729250","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8322419,"","1000893954","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",3000.00
+453739,8323007,"N243515","1000845475","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8325861,"","1000939543","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8326629,"","1000962220","042","Free Accidental Death","A","In-Force","I","Inclusive","EUR",40000.00
+453739,8326629,"","1000962221","042","Free Accidental Death","A","In-Force","I","Inclusive","EUR",40000.00
+453739,8333031,"","1000879478","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8335485,"","1000963079","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8335891,"","1000941902","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8336242,"","1000897390","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8336268,"","1000963066","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8336722,"","1000897740","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8340504,"","1000942083","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8341628,"","1000217651","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8341768,"","1000964368","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8343328,"N257657","1000474870","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8343328,"N257657","1000852941","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8345425,"","1000798815","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8346451,"","1000943435","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8346646,"","1000943524","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8349692,"","1000734801","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8351652,"","1000636664","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8351692,"","1000945024","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8351692,"","1000945027","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8352468,"","1000965703","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8353118,"","1000800949","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8353797,"PIC13016/1","1000698656","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8354322,"","1000945299","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",19114.63
+453739,8358859,"","1000984398","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8359395,"","1000737177","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8363991,"","1000901592","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",15000.09
+453739,8363991,"","1000901594","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",15000.09
+453739,8364575,"","1000533296","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8367342,"","1000902597","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8368930,"PIC12846","1000678771","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8369915,"","1000947330","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8371073,"","1000945976","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8378017,"","1000669067","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8378280,"DVA14046/1","1000948939","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8380266,"","1000905741","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8380284,"","1000905740","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8380292,"","1000905736","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8380914,"","1000497277","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8381001,"","1000905994","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8381001,"","1000905995","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8383602,"","1000742902","042","Free Accidental Death","E","Expired","I","Inclusive","GBP",0.00
+453739,8383602,"","1000742905","042","Free Accidental Death","E","Expired","I","Inclusive","GBP",0.00
+453739,8383949,"","1000830088","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8384349,"PIC-ZL530","1000743204","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8385380,"PIC-ZL388","1000743357","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8387197,"","1000907924","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8387197,"","1000908049","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8390034,"N253158","1000908804","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8390725,"","1000909268","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8390854,"PIC1306714","1000809050","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8391186,"","1000909505","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8394690,"PIC13063/1","1000809331","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8395707,"PIC-ZL397","1000746340","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8396166,"","1000889235","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8397322,"","1000910472","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8399335,"","1000972953","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8412394,"","1001070983","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8412394,"","1001070984","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8413461,"","1000974101","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8415463,"","1000993354","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8415510,"","1000992563","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8428412,"","1001074413","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8429251,"","1000994852","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8435785,"","1000978641","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8472701,"","1001014566","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8477496,"","1001084615","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8477496,"","1001084616","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8478124,"","1001071701","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8478124,"","1001071703","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8478150,"","1001084983","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8478158,"","1001085001","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8478158,"","1001085002","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8478354,"","1001118183","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8478354,"","1001118184","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8479382,"","1001016585","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8480135,"","1001049751","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8480365,"","1001085605","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8480661,"","1001084827","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8486827,"","1001086668","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8487574,"","1001119580","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8487574,"","1001119581","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8491693,"","1000945976","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8496532,"","1001054655","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8503561,"","1001054655","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8508742,"","1001091189","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8525074,"","1001058097","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8541419,"","1001027375","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8556860,"","1001100246","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8557024,"","1001100271","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8566677,"","1001102935","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8568548,"","1001103202","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8581071,"","1001030599","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,8587373,"","1000681793","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,8594548,"","1000922776","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,9829219,"PIC752/09","1000556969","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9837707,"","1000568188","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9887432,"","1000572913","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,9911209,"PIC798/09","1000561802","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9911209,"PIC798/09","1000561804","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9915513,"A054V8856","1000473168","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9921499,"A061V8897","1000474870","010","Life Cover","E","Expired","I","Inclusive","USD",0.00
+453739,9921499,"A061V8897","1000474870","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9924366,"A075V8927","1000475693","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9927578,"A054V8920","1000473168","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9946854,"BL017/0104","1000577297","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9949354,"D220V11175","1000523408","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
+453739,9974854,"A014V9432","1000488666","042","Free Accidental Death","A","In-Force","I","Inclusive","USD",50000.00
+453739,9983235,"CIB357/08","1000553163","042","Free Accidental Death","E","Expired","I","Inclusive","USD",0.00
