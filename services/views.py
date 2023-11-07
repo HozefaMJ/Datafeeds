@@ -4,6 +4,7 @@ import requests
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseBadRequest, JsonResponse
 import datetime
+from django.db.models import Count
 from django.utils import timezone
 import pandas as pd
 from django.utils.dateparse import parse_date
@@ -14,7 +15,7 @@ import time as timeset
 from django.core.exceptions import ValidationError as VE
 from django.utils.dateparse import parse_date
 from .utils import collect_attachments, get_product_id,process_sftp_file,collect_attachments_rl360
-from .models import Policy,RegularPolicy,CashflowHistory,FinancialAccountModel,HoldingsModel
+from .models import MappedFinancialAccountModel, MappedPolicyModel, Policy,RegularPolicy,CashflowHistory,FinancialAccountModel,HoldingsModel
 
 ########################
 client_id = '55b2ac50-5f9d-46cd-94ae-9ae427cd5964'
@@ -591,12 +592,12 @@ def rl360(request):
     
 
     # df_Holdings = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_Holdings.csv",encoding = "ISO-8859-1")
-    df_Holdings = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_Holdings.csv",encoding = "ISO-8859-1")
-    df_CashHoldings = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_CashHoldings.csv",encoding = "ISO-8859-1")
+    df_Holdings = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/RL360-3/20230728-DF_432-DATAFEEDS_ZIPPED/DF_432_Holdings.csv",encoding = "ISO-8859-1")
+    df_CashHoldings = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_CashHoldings.csv",encoding = "ISO-8859-1")
     # df_Policy = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_Policy.csv",encoding = "ISO-8859-1")
-    df_Policy = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_Policy.csv",encoding = "ISO-8859-1")
-    df_PremiumHistory = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_PremHist.csv",encoding = "ISO-8859-1")
-    df_CashTransaction = pd.read_csv(r"C:\WorkSpace\Datafeeds\Datafeeds\RL360\DF_497_CashTranHist.csv",encoding = "ISO-8859-1")
+    df_Policy = pd.read_csv("/Users/dexter/Documents/Workspace/Skybound/Clean_Datafeeds/DataDefaults/RL360-3/20230728-DF_432-DATAFEEDS_ZIPPED/DF_432_Policy.csv",encoding = "ISO-8859-1")
+    df_PremiumHistory = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_PremHist.csv",encoding = "ISO-8859-1")
+    df_CashTransaction = pd.read_csv("https://skybound-client-app.s3.eu-north-1.amazonaws.com/DF_420_CashTranHist.csv",encoding = "ISO-8859-1")
 
 
     df_Holdings['ValuationDate'] = df_Holdings['System_Dt']
@@ -2165,7 +2166,7 @@ def seb(request):
     filename = collect_attachments(email_address, subject_name, client_id, client_secret, tenant_id)
     print(filename)
     # df = pd.read_csv(filename,encoding = "ISO-8859-1")
-    df = pd.read_excel(r'C:\WorkSpace\Datafeeds\files\DataFeeds\SEB Main Sept 2023.xls')
+    df = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/files/DataFeeds/SEB Main Sept 2023.xls')
 
     df['PolicyNumber'] = df['Policy Number']
     df['HoldingName'] = df['Asset Name']
@@ -2533,3 +2534,99 @@ class Holdings(View):
             return HttpResponse("Data sent successfully!")
 
         return HttpResponse("Authentication failed!")
+
+API_TOKEN = '2f18a6c8-8e2b-47f7-b913-4a59f7e3f85a'
+
+def map_and_return_data(request):
+    api_token = request.headers.get('Api-Token')
+    if api_token != API_TOKEN:
+        return JsonResponse({'error': 'Unauthorized'}, status=401)
+    
+    financial_data = FinancialAccountModel.objects.all()
+    excel_data = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/services/utils/mapper.xlsx')
+    
+    mapped_data = []
+
+    for index, row in excel_data.iterrows():
+        policy_number = row["Financial Account Name"]
+        financial_account_name = row["Client Name"]
+        
+        # Check if the entry already exists in MappedFinancialAccountModel
+        if not MappedFinancialAccountModel.objects.filter(policy_number=policy_number).exists():
+            # Find corresponding entry in FinancialAccountModel
+            financial_entry = financial_data.filter(policy_number=policy_number).first()
+            
+            if financial_entry:
+                # Create a new entry in MappedFinancialAccountModel
+                mapped_entry = MappedFinancialAccountModel.objects.create(
+                    policy_number=policy_number,
+                    provider=financial_entry.provider,
+                    provider_id=financial_entry.provider_id,
+                    product=financial_entry.product,
+                    valuation_date=financial_entry.valuation_date,
+                    policy_currency=financial_entry.policy_currency,
+                    policy_start_date=financial_entry.policy_start_date,
+                    policy_end_date=financial_entry.policy_end_date,
+                    sub_policies=financial_entry.sub_policies,
+                    sub_product_type=financial_entry.sub_product_type,
+                    policy_basis=financial_entry.policy_basis,
+                    business_split=financial_entry.business_split,
+                    account_status=financial_entry.account_status,
+                    regular_contribution=financial_entry.regular_contribution,
+                    lumpsum_contribution=financial_entry.lumpsum_contribution,
+                    policy_term=financial_entry.policy_term,
+                    contribution_frequency=financial_entry.contribution_frequency,
+                    next_contribution_date=financial_entry.next_contribution_date,
+                    last_contribution_date=financial_entry.last_contribution_date,
+                    number_premiums_missed=financial_entry.number_premiums_missed,
+                    arrear_status=financial_entry.arrear_status,
+                    premium_holiday_status=financial_entry.premium_holiday_status,
+                    premium_holiday_commencement_date=financial_entry.premium_holiday_commencement_date,
+                    premium_holiday_end_date=financial_entry.premium_holiday_end_date,
+                    client_name=row["Client Name"],
+                    financial_account_name=row["Financial Account Name"],
+                    account_id=row["Account ID"],
+                    financial_account_id=row["Financial Account ID"],
+                    consultant_name=row["Consultant Name"]
+                )
+                mapped_data.append(mapped_entry)
+    
+    # Return all entries from MappedFinancialAccountModel as JSON response
+    mapped_data = MappedFinancialAccountModel.objects.filter(pk__in=[entry.pk for entry in mapped_data]).values()
+    return JsonResponse(list(mapped_data), safe=False)
+
+
+
+def find_non_unique_entries(request):
+    non_unique_entries = MappedFinancialAccountModel.objects.values('policy_number', 'financial_account_name').annotate(count=Count('id')).filter(count__gt=1)
+    return JsonResponse(list(non_unique_entries), safe=False)
+
+
+def find_non_unique_entries_excel(request):
+    excel_data = pd.read_excel('/Users/dexter/Documents/Workspace/Skybound/Datafeeds/services/utils/mapper.xlsx')
+    
+    # Get a list of non-unique entries in the 'Financial Account Name' column
+    non_unique_entries = excel_data[excel_data.duplicated(subset=['Financial Account Name'], keep=False)]
+    
+    # Convert the result to a list of dictionaries
+    non_unique_entries_list = non_unique_entries.to_dict(orient='records')
+    
+    return JsonResponse(non_unique_entries_list, safe=False)
+
+
+def find_missing_policy_numbers(request):
+    financial_policy_numbers = set(FinancialAccountModel.objects.values_list('policy_number', flat=True))
+    mapped_policy_numbers = set(MappedFinancialAccountModel.objects.values_list('policy_number', flat=True))
+    
+    missing_policy_numbers = list(financial_policy_numbers - mapped_policy_numbers)
+    
+    return JsonResponse(missing_policy_numbers, safe=False)
+
+
+def map_and_return_data_policy(request):
+    api_token = request.headers.get('Api-Token')
+    if api_token != API_TOKEN:
+        return JsonResponse({'error': 'Unauthorized'}, status=401)
+    mapped_data = Policy.objects.all().values()
+    return JsonResponse(list(mapped_data), safe=False)
+
